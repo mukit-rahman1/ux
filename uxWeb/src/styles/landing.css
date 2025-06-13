@@ -17,6 +17,7 @@
     align-self: center;
     justify-self: center;
     width: 85%;
+    min-height: 4%;
     background-color: green;
 
 }
@@ -35,7 +36,7 @@
     align-self: center;
     justify-self: center;
     width: 48vw;
-    height: 48vh;
+    min-height: 48vh;
     background-color: red;
 }
 
