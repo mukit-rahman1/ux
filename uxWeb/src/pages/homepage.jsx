@@ -9,7 +9,7 @@ export default function Home() {
             <img src="../Dot Grid.svg" alt="Dot Grid"/>
         </div>
         <div className="dot-grid-2">
-            <img src="../Dot Grid.svg" alt="Dot Grid"/>
+            <img src="../Dot Grid-cropped.svg" alt="Dot Grid"/>
         </div>
             
         

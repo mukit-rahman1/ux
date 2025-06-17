@@ -62,7 +62,7 @@
   .dot-grid-1 {
     position: absolute;
     top: 15.35%;
-    right: 8%;
+    right: 7%;
     transform: translate(50%, -50%);
 
     z-index: 1;
@@ -75,7 +75,7 @@
 
   .dot-grid-2 {
     position: absolute;
-    top: 95%;
+    top: 92.1%;
     left: 6%;
     transform: translate(-50%, -50%);
 
