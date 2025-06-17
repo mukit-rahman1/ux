@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Landing from './pages/landing.jsx'
 import Team from './pages/team.jsx'
 import Homepage from './pages/homepage.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -8,16 +7,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing />,
+    element: <Homepage />,
   },
   {
     path: "/team",
     element: <Team />,
-  },
-  {
-    path: "/homepage",
-    element: <Homepage />,
-  },
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

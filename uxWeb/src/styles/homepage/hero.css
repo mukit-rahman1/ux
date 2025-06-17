@@ -1,0 +1,132 @@
+
+  /* Hero Section */
+  .page-container {
+    position: relative;
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 721px;
+    height: 447px;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 51%;
+  }
+
+  
+  .dot-pattern {
+    position: absolute;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  
+  .right-dots {
+    
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .left-dots {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .dot-pattern::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+
+  
+  .hero-title {
+    font-family: 'BR Firma', sans-serif !important;
+
+    height: 53%;
+    
+    font-weight: 500;
+    width: 92%;
+    font-size: 48px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+  }
+  
+  .text-grad {
+    font-family: 'BR Firma', sans-serif !important;
+    background: linear-gradient(to right, #A3280C, #657F95);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 48px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  
+  
+  .hero-desc-container {
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-desc-text {
+    color: #979797;
+    font-family: "BR Firma", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+    
+
+
+  .hero-description {
+
+    color: #666;
+    font-size: 1.125rem;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  

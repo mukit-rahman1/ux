@@ -1,0 +1,46 @@
+
+/* Join Section */
+  .join-section {
+    padding: 6rem 0;
+    position: relative;
+
+    display: flex;
+    
+  }
+  
+  .join-container {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+  
+  .join-content {
+    margin-top: 17rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .join-title {
+    text-align: left;
+    font-weight: 700;
+    font-family: 'BR Firma', sans-serif;
+    font-size: 91.27px;
+    line-height: 95%;
+    letter-spacing: 0%;
+  }
+  
+  .join-button-container {
+    margin-top: 3rem;
+
+    font-family: 'BR Firma', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  

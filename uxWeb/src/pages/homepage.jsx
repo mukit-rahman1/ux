@@ -5,8 +5,11 @@ export default function Home() {
       <div className="page-container">
         <div className="red-radial-circle"></div>
         <div className="blue-radial-circle"></div>
-        <div className="dot-grid">
-            <img src="../Dot Grid.png" alt="Dot Grid"/>
+        <div className="dot-grid-1">
+            <img src="../Dot Grid.svg" alt="Dot Grid"/>
+        </div>
+        <div className="dot-grid-2">
+            <img src="../Dot Grid.svg" alt="Dot Grid"/>
         </div>
             
         
@@ -17,7 +20,11 @@ export default function Home() {
         </div>  
         </header>
   
-        {/* Hero Section */}
+        
+          {/* Decorative elements */}
+  
+          <div className="hero-content">
+            {/* Hero Section */}
         <div className="hero-section">
           {/* Navigation */}
             <div className="nav-links">
@@ -41,9 +48,8 @@ export default function Home() {
               </a>
             </div>
 
-          {/* Decorative elements */}
-  
-          <div className="hero-content">
+
+            <div className="hero-text-container">
             <h1 className="hero-title">
               The Premier Club For
               <div>
@@ -52,9 +58,10 @@ export default function Home() {
             </h1>
             <div className="hero-desc-container">
             <p className="hero-desc-text">
-              We are Queen's UX, a group of talented students from Queen's University who are passionate about product
-              design and every thing revolving around improving user interfaces.
+              We are Queen's UX, a group of talented students from <br/> Queen's University who are passionate about product
+              design <br/> and every thing revolving around improving user interfaces.
             </p>
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +69,14 @@ export default function Home() {
         {/* Sponsors */}
         <section className="sponsors-section">
           <div className="sponsors-container">
-
+            <h2 className="sponsors-title">Become a Sponsor</h2>
+            <p className="sponsors-desc">Help us create a community tor aesigners at Queen's University<br/>
+            Click the button below for inquires about partnerships with us</p>
+          </div>
+          <div className="sponsors-button-container">
+            <a href="/sponsors" className="sponsors-button-outline">
+              Sponsor Queen's UX Club
+            </a>
           </div>
         </section>
   
@@ -75,28 +89,32 @@ export default function Home() {
   
           <div className="values-heading">
             <h2>
-              We strive to <span className="text-green">build</span>, <span className="text-blue">design</span>, and
-              <span className="text-orange"> teach</span> with our community
+              We strive to <h2 className="text-y-b">build</h2>, 
+              <h2 className="text-r-g"> design</h2>
+              , and <h2 className="text-b-y"> teach </h2> with our community
             </h2>
           </div>
   
-          <div className="values-container">
+          <div className="values-card-section">
             <div className="value-card">
               <div className="value-number">01</div>
               <div className="value-circle yellow-green-gradient"></div>
               <h3 className="value-title">BUILD</h3>
+              <div className="card-bg"> </div>
             </div>
   
             <div className="value-card">
               <div className="value-number">02</div>
               <div className="value-circle blue-red-gradient"></div>
               <h3 className="value-title">DESIGN</h3>
+              <div className="card-bg"> </div>
             </div>
   
             <div className="value-card">
               <div className="value-number">03</div>
               <div className="value-circle orange-red-gradient"></div>
               <h3 className="value-title">TEACH</h3>
+              <div className="card-bg"> </div>
             </div>
           </div>
   
@@ -110,8 +128,6 @@ export default function Home() {
         {/* Join Section */}
         <section className="join-section">
           {/* Dot pattern */}
-          <div className="dot-pattern left-dots"></div>
-  
           <div className="join-container">
             <div className="join-content">
               <h2 className="join-title">
@@ -127,10 +143,7 @@ export default function Home() {
             </div>
   
             <div className="shapes-container">
-              <div className="shape star-shape"></div>
-              <div className="shape circle-shape"></div>
-              <div className="shape square-shape-1"></div>
-              <div className="shape square-shape-2"></div>
+              <img src="../Group 7.svg" alt="Group 7"/>
             </div>
           </div>
         </section>
