@@ -1,45 +1,96 @@
+@font-face {
+  font-family: "BR Firma";
+  src: url("../br-firma/BR Firma SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "BR Firma";
+  src: url("../br-firma/BR Firma Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+
 .hero {
   position: relative;
-  padding: 5rem 0;
+  top: 185px;
   overflow: hidden;
 }
 
 .hero-content {
-  max-width: 64rem;
+  width: 757px;
 }
 
 .hero-title {
   font-family: "BR Firma", sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 128px;
+  font-weight: 600;
+
   margin-bottom: 2rem;
   line-height: 1.1;
+
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  height: 262px;
+  width: 531px;
+
 }
 
-.hero-title .queen {
-  color: #2563eb;
-}
-
-.hero-title .ux {
-  color: #60a5fa;
-}
-
-.hero-title .club {
-  color: #111827;
-}
 
 .hero-body {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+
+  width: 100%;
+  height: 96px;
 }
 
 .hero-text {
   flex: 1;
-  color: #6b7280;
-  font-size: 1.125rem;
-  line-height: 1.75;
-  max-width: 28rem;
+  color: black;
+
+  font-family: "BR Firma", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  background-color: #00022B;
+  margin-bottom: 2rem;
+  
+
+  height: 56px;
+  width: 112px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.join-btn:hover {
+  background: linear-gradient(to right, #A3280C, #657F95);
 }
 
 .decorative-star {
@@ -69,10 +120,4 @@
   width: 1rem;
   height: 1rem;
   color: #ef4444;
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 6rem;
-  }
 }

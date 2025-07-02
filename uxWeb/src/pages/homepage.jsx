@@ -11,10 +11,10 @@ export default function homepage() {
   return (
     <div>
       {/* Header */}
-        <div className="container bg-amber-400 rounded-b-2xl">
-          <nav className="nav-container">
-            <div className="logo w-[60px] h-[48px]">
-              <img src="../ux.png" alt="UX" className="ux-logo"/>
+        <div className="navbar-home">
+
+            <div className="logo w-[60px] h-[46px]">
+              <img src="../Logo.svg" alt="UX" className="ux-logo"/>
             </div>
             <div className="nav-links">
               <a href="/team">Our Team</a>
@@ -23,50 +23,38 @@ export default function homepage() {
               <a href="/sponsorship">Sponsorship</a>
               <a href="/projects">Projects</a>
             </div>
-            <a href="#" className="btn btn-primary">
+            <a href="#" className="contact-btn">
               Contact
             </a>
-          </nav>
         </div>
 
 
       {/* Hero Section */}
       <section className="hero">
         {/* Decorative Stars */}
-        <div className="decorative-star star-1">
-          <svg viewBox="0 0 24 24" className="star-icon">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        </div>
-        <div className="decorative-star star-2">
-          <svg viewBox="0 0 24 24" className="star-icon">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        </div>
-        <div className="decorative-star star-3">
-          <svg viewBox="0 0 24 24" className="star-icon">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        </div>
-
+       
+        {/* Hero Content */}
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="queen">Queen's</span>
-              <br />
-              <span className="ux">UX</span> <span className="club">Club</span>
-            </h1>
+            <div className="hero-top">
+              <h1 className="hero-title">
+                Queen's
+                <br />
+                UX Club
+              </h1>
+              <div href="#" className="join-btn">
+                Join <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
+              </div>
+            </div>
             <div className="hero-body">
               <div className="hero-text">
                 <p>
-                  Queen's UX (User Experience) Club is a community for students of all backgrounds, disciplines, and
-                  skill levels to explore, learn, and grow in user experience. We aim to connect curious minds through
-                  collaborative events, workshops, and projects that inspire better design for all.
+                Queen's UX (User Experience) Club is a community for students of all backgrounds,
+                 disciplines, and skill levels to explore, learn, and grow in user experience. 
+                 We aim to connect curious minds through collaborative events, workshops, and 
+                 projects that inspire better design for all.
                 </p>
               </div>
-              <a href="#" className="btn btn-primary">
-                Join <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
-              </a>
             </div>
           </div>
         </div>
@@ -74,67 +62,51 @@ export default function homepage() {
 
       {/* Vision Section */}
       <section className="vision">
-        <div className="vision-star-1">
-          <svg viewBox="0 0 24 24" className="star-icon">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        </div>
-        <div className="vision-star-2">
-          <svg viewBox="0 0 24 24" className="star-icon">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        </div>
+        {/* vision stars */}
 
+        {/* vision content */}
         <div className="container">
+          <div className="vision-content">
           <h2 className="vision-title">Vision</h2>
           <p className="vision-text">
             To be the leading student-driven community at Queen's University that inspires innovation and shapes the
             future of user experience by empowering the next generation of empathetic, creative, and interdisciplinary
             UX leaders.
           </p>
+          </div>
         </div>
       </section>
+
 
       {/* Core Values Section */}
       <section className="values">
         <div className="container">
           <h2 className="values-title">
-            <span className="core">Core</span> <span className="values-word">Values</span>
+            Core Values
           </h2>
 
           <div className="values-grid">
             <div className="card value-card creativity">
               <div className="value-icon creativity">
-                <svg viewBox="0 0 24 24" className="star-icon">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
+                
               </div>
               <h3 className="value-title">Creativity</h3>
             </div>
 
             <div className="card value-card empathy">
               <div className="value-icon empathy">
-                <svg viewBox="0 0 24 24" className="star-icon">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <h3 className="value-title">Empathy</h3>
             </div>
 
             <div className="card value-card curiosity">
               <div className="value-icon curiosity">
-                <svg viewBox="0 0 24 24" className="star-icon">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <h3 className="value-title">Curiosity</h3>
             </div>
 
             <div className="card value-card inclusivity">
               <div className="value-icon inclusivity">
-                <svg viewBox="0 0 24 24" className="star-icon">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <h3 className="value-title">Inclusivity</h3>
             </div>

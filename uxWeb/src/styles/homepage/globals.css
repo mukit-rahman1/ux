@@ -39,34 +39,21 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9fafb;
+  background-color: #FFFCF5;
   color: #111827;
   line-height: 1.6;
 }
+
+
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 9999px;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
-.btn-primary {
-  background-color: #1e3a8a;
-  color: white;
-}
 
 .btn-primary:hover {
   background-color: #1e40af;
