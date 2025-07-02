@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Team from './pages/team.jsx'
 import Homepage from './pages/homepage.jsx'
+import Hackathon from './pages/hackathon.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/team",
     element: <Team />,
+  },
+  {
+    path: "/hackathon",
+    element: <Hackathon />,
   }
 ]);
 

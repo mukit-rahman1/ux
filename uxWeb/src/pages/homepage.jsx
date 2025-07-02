@@ -1,178 +1,248 @@
-import "../styles/homepage.css"
+import "../styles/homepage/globals.css"
+import "../styles/homepage/header.css"
+import "../styles/homepage/hero.css"
+import "../styles/homepage/vision.css"
+import "../styles/homepage/values.css"
+import "../styles/homepage/events.css"
+import "../styles/homepage/footer.css"
+import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
 
-export default function Home() {
-    return (
-      <div className="page-container">
-        <div className="red-radial-circle"></div>
-        <div className="blue-radial-circle"></div>
-        <div className="dot-grid-1">
-            <img src="../Dot Grid.svg" alt="Dot Grid"/>
-        </div>
-        <div className="dot-grid-2">
-            <img src="../Dot Grid-cropped.svg" alt="Dot Grid"/>
-        </div>
-            
-        
-        {/* Navigation */}
-        <header>
-        <div href="/" className="logo">
-            <img src="../ux.png" alt="UX" className="ux-logo"/>
-        </div>  
-        </header>
-  
-        
-          {/* Decorative elements */}
-  
-          <div className="hero-content">
-            {/* Hero Section */}
-        <div className="hero-section">
-          {/* Navigation */}
+export default function homepage() {
+  return (
+    <div>
+      {/* Header */}
+        <div className="container bg-amber-400 rounded-b-2xl">
+          <nav className="nav-container">
+            <div className="logo w-[60px] h-[48px]">
+              <img src="../ux.png" alt="UX" className="ux-logo"/>
+            </div>
             <div className="nav-links">
-              <a href="/" className="nav-link active">
-                Home
-              </a>
-              <a href="/our-team" className="nav-link">
-                Our Team
-              </a>
-              <a href="/events" className="nav-link">
-                Events
-              </a>
-              <a href="/hackathon" className="nav-link-hackathon">
-                Hackathon
-              </a>
-              <a href="/sponsors" className="nav-link">
-                Sponsors
-              </a>
-              <a href="/projects" className="nav-link">
-                Projects
-              </a>
+              <a href="/team">Our Team</a>
+              <a href="/events">Events</a>
+              <a href="/hackathon">Hackathon</a>
+              <a href="/sponsorship">Sponsorship</a>
+              <a href="/projects">Projects</a>
             </div>
+            <a href="#" className="btn btn-primary">
+              Contact
+            </a>
+          </nav>
+        </div>
 
 
-            <div className="hero-text-container">
+      {/* Hero Section */}
+      <section className="hero">
+        {/* Decorative Stars */}
+        <div className="decorative-star star-1">
+          <svg viewBox="0 0 24 24" className="star-icon">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <div className="decorative-star star-2">
+          <svg viewBox="0 0 24 24" className="star-icon">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <div className="decorative-star star-3">
+          <svg viewBox="0 0 24 24" className="star-icon">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+
+        <div className="container">
+          <div className="hero-content">
             <h1 className="hero-title">
-              The Premier Club For
-              <div>
-                <span className="text-grad">Product Design</span>
-              </div>
+              <span className="queen">Queen's</span>
+              <br />
+              <span className="ux">UX</span> <span className="club">Club</span>
             </h1>
-            <div className="hero-desc-container">
-            <p className="hero-desc-text">
-              We are Queen's UX, a group of talented students from <br/> Queen's University who are passionate about product
-              design <br/> and every thing revolving around improving user interfaces.
-            </p>
+            <div className="hero-body">
+              <div className="hero-text">
+                <p>
+                  Queen's UX (User Experience) Club is a community for students of all backgrounds, disciplines, and
+                  skill levels to explore, learn, and grow in user experience. We aim to connect curious minds through
+                  collaborative events, workshops, and projects that inspire better design for all.
+                </p>
               </div>
+              <a href="#" className="btn btn-primary">
+                Join <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
+              </a>
             </div>
           </div>
         </div>
-  
-        {/* Sponsors */}
-        <section className="sponsors-section">
-          <div className="sponsors-container">
-            <h2 className="sponsors-title">Become a Sponsor</h2>
-            <p className="sponsors-desc">Help us create a community tor aesigners at Queen's University<br/>
-            Click the button below for inquires about partnerships with us</p>
+      </section>
+
+      {/* Vision Section */}
+      <section className="vision">
+        <div className="vision-star-1">
+          <svg viewBox="0 0 24 24" className="star-icon">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <div className="vision-star-2">
+          <svg viewBox="0 0 24 24" className="star-icon">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+
+        <div className="container">
+          <h2 className="vision-title">Vision</h2>
+          <p className="vision-text">
+            To be the leading student-driven community at Queen's University that inspires innovation and shapes the
+            future of user experience by empowering the next generation of empathetic, creative, and interdisciplinary
+            UX leaders.
+          </p>
+        </div>
+      </section>
+
+      {/* Core Values Section */}
+      <section className="values">
+        <div className="container">
+          <h2 className="values-title">
+            <span className="core">Core</span> <span className="values-word">Values</span>
+          </h2>
+
+          <div className="values-grid">
+            <div className="card value-card creativity">
+              <div className="value-icon creativity">
+                <svg viewBox="0 0 24 24" className="star-icon">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="value-title">Creativity</h3>
+            </div>
+
+            <div className="card value-card empathy">
+              <div className="value-icon empathy">
+                <svg viewBox="0 0 24 24" className="star-icon">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="value-title">Empathy</h3>
+            </div>
+
+            <div className="card value-card curiosity">
+              <div className="value-icon curiosity">
+                <svg viewBox="0 0 24 24" className="star-icon">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="value-title">Curiosity</h3>
+            </div>
+
+            <div className="card value-card inclusivity">
+              <div className="value-icon inclusivity">
+                <svg viewBox="0 0 24 24" className="star-icon">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="value-title">Inclusivity</h3>
+            </div>
           </div>
-          <div className="sponsors-button-container">
-            <a href="/sponsors" className="sponsors-button-outline">
-              Sponsor Queen's UX Club
+
+          <div className="values-cta">
+            <a href="#" className="btn btn-primary">
+              Meet Our Team <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
             </a>
           </div>
-        </section>
-  
-        {/* Values Section */}
-        <section className="values-section">
-          {/* Decorative stars */}
-          <div className="star yellow-star"></div>
-          <div className="star red-star"></div>
-          <div className="star green-star"></div>
-  
-          <div className="values-heading">
-            <h2>
-              We strive to <h2 className="text-y-b">build</h2>, 
-              <h2 className="text-r-g"> design</h2>
-              , and <h2 className="text-b-y"> teach </h2> with our community
-            </h2>
-          </div>
-  
-          <div className="values-card-section">
-            <div className="value-card">
-              <div className="value-number">01</div>
-              <div className="value-circle yellow-green-gradient"></div>
-              <h3 className="value-title">BUILD</h3>
-              <div className="card-bg"> </div>
-            </div>
-  
-            <div className="value-card">
-              <div className="value-number">02</div>
-              <div className="value-circle blue-red-gradient"></div>
-              <h3 className="value-title">DESIGN</h3>
-              <div className="card-bg"> </div>
-            </div>
-  
-            <div className="value-card">
-              <div className="value-number">03</div>
-              <div className="value-circle orange-red-gradient"></div>
-              <h3 className="value-title">TEACH</h3>
-              <div className="card-bg"> </div>
-            </div>
-          </div>
-  
-          <div className="team-button-container">
-            <a href="/team" className="button-outline">
-              Meet our Team
-            </a>
-          </div>
-        </section>
-  
-        {/* Join Section */}
-        <section className="join-section">
-          {/* Dot pattern */}
-          <div className="join-container">
-            <div className="join-content">
-              <h2 className="join-title">
-                Join
-                <br />
-                Today!
-              </h2>
-              <div className="join-button-container">
-                <a href="/join" className="button-outline">
-                  Become a UXpert
-                </a>
+        </div>
+      </section>
+
+      {/* Upcoming Events Section */}
+      <section className="events">
+        <div className="container">
+          <h2 className="events-title">
+            <span className="upcoming">Upcoming</span> <span className="events-word">Events</span>
+          </h2>
+
+          <div className="events-grid">
+            <div className="event-card">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="Workshop setup"
+                width={400}
+                height={200}
+                className="event-image"
+              />
+              <div className="event-content">
+                <div className="event-category">Workshops</div>
+                <h3 className="event-title">Intro to Figma</h3>
+                <p className="event-description">
+                  Our first workshop introduces students to Figma, where they learn how to design, collaborate, and
+                  prototype with this powerful design tool. Perfect for beginners looking to start their UX journey!
+                </p>
               </div>
             </div>
-  
-            <div className="shapes-container">
-              <img src="../Group 7.svg" alt="Group 7"/>
+
+            <div className="event-card">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="Workshop classroom"
+                width={400}
+                height={200}
+                className="event-image"
+              />
+              <div className="event-content">
+                <div className="event-category">Workshops</div>
+                <h3 className="event-title">Intro to Figma</h3>
+                <p className="event-description">
+                  Our first workshop introduces students to Figma, where they learn how to design, collaborate, and
+                  prototype with this powerful design tool. Perfect for beginners looking to start their UX journey!
+                </p>
+              </div>
+            </div>
+
+            <div className="event-card">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="Workshop session"
+                width={400}
+                height={200}
+                className="event-image"
+              />
+              <div className="event-content">
+                <div className="event-category">Workshops</div>
+                <h3 className="event-title">Intro to Figma</h3>
+                <p className="event-description">
+                  Our first workshop introduces students to Figma, where they learn how to design, collaborate, and
+                  prototype with this powerful design tool. Perfect for beginners looking to start their UX journey!
+                </p>
+              </div>
             </div>
           </div>
-        </section>
-  
-        {/* Footer */}
-        <footer className="main-footer">
-          <div className="social-link">
-            <a href="https://instagram.com/queensux" className="instagram-link">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="instagram-icon"
-              >
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-              <span>@queensux</span>
+
+          <div className="events-cta">
+            <a href="#" className="btn btn-primary">
+              See All Events <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
             </a>
           </div>
-        </footer>
-      </div>
-    )
-  }
-  
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-logo">UX</div>
+            <div className="social-links">
+              <a href="#">
+                <Mail className="social-icon" />
+              </a>
+              <a href="#">
+                <Instagram className="social-icon" />
+              </a>
+              <a href="#">
+                <Linkedin className="social-icon" />
+              </a>
+              <a href="#">
+                <svg className="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}

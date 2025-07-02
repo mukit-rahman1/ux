@@ -1,155 +1,89 @@
-
-  /* Values Section */
-  .values-section {
-    padding: 6rem 0;
-    position: relative;
-  }
-  
-  .star {
-    position: absolute;
-    font-size: 3rem;
-  }
-  
-  .yellow-star {
-    right: 0;
-    bottom: 0;
-    color: #ffd700;
-  }
-  
-  .red-star {
-    right: 8rem;
-    top: 0;
-    color: #ff5252;
-  }
-  
-  .green-star {
-    left: 2.5rem;
-    bottom: 10rem;
-    color: #4caf50;
-  }
-  
-  .values-heading {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  
-h2 {
-    font-family: "BR Firma", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    
+.values {
+  padding: 5rem 0;
 }
-  
-  .values-card-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    max-width: 64rem;
 
-    height: 27rem;
-  }
-  
- 
-  
-  .value-number {
-    position: relative;
-    top: 5%;
-    left: 88%;
-    transform: translate(-50%, -50%);
+.values-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
 
-    font-family: "BR Firma", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #00022B;
-    letter-spacing: 0%;
-    line-height: 100%;
-    z-index: 2;
-  }
+.values-title .core {
+  color: #2563eb;
+}
 
-  .value-card {
-    position: relative;
-    text-align: center;
-    height: 90%;
-  }
-  
-  .card-bg {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 80%;
-    height: 83%;
-    background-color: #FFFFFF;
-    z-index: 1;            
-  }
-  
-  .value-circle {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
+.values-title .values-word {
+  color: #dc2626;
+}
 
-    position: relative;
-    top: 77%;
-    left: 18%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
 
-  }
-  
-  .yellow-green-gradient {
-    background: linear-gradient(to bottom, #fff59d, #a5d6a7);
-  }
-  
-  .blue-red-gradient {
-    background: linear-gradient(to bottom, #90caf9, #ef9a9a);
-  }
-  
-  .orange-red-gradient {
-    background: linear-gradient(to bottom, #ffcc80, #ef5350);
-  }
-  
-  .value-title {
-    position: relative;
-    font-family: "BR Firma", sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    z-index: 2;
-    color: #00022B;
+.value-card {
+  border: 2px solid;
+  padding: 1.5rem;
+  text-align: center;
+}
 
-    transform: translate(-50%, -50%);
-    top: 20%;
-    left: 75%;
-  }
-  
-  .team-button-container {
-    text-align: center;
-    margin-top: 4rem;
-  }
-  
-  .text-y-b { 
-    display: inline-block;
-    background: linear-gradient(to right, #FCC560, #A0CBAD, #8FB1BE);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+.value-card.creativity {
+  border-color: #fca5a5;
+}
 
-  .text-r-g{
-    display: inline-block;
-    background: linear-gradient(to right, #D53302, #8FB1BE, #A0CBAD);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+.value-card.empathy {
+  border-color: #fde047;
+}
 
-  .text-b-y{
-    display: inline-block;
-    background: linear-gradient(to right, #8FB1BE, #D53302, #FCC560);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.value-card.curiosity {
+  border-color: #93c5fd;
+}
+
+.value-card.inclusivity {
+  border-color: #fdba74;
+}
+
+.value-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+}
+
+.value-icon.creativity {
+  color: #3b82f6;
+}
+
+.value-icon.empathy {
+  color: #10b981;
+}
+
+.value-icon.curiosity {
+  color: #f59e0b;
+}
+
+.value-icon.inclusivity {
+  color: #ef4444;
+}
+
+.value-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.values-cta {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,132 +1,78 @@
+.hero {
+  position: relative;
+  padding: 5rem 0;
+  overflow: hidden;
+}
 
-  /* Hero Section */
-  .page-container {
-    position: relative;
-  }
-  
-  .hero-content {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.hero-content {
+  max-width: 64rem;
+}
 
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 721px;
-    height: 447px;
-  }
-  
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.hero-title {
+  font-family: "BR Firma", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
 
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hero-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.hero-title .queen {
+  color: #2563eb;
+}
 
-    width: 100%;
-    height: 51%;
-  }
+.hero-title .ux {
+  color: #60a5fa;
+}
 
-  
-  .dot-pattern {
-    position: absolute;
-    color: black;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-  }
-  
-  .right-dots {
-    
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  
-  .left-dots {
-    left: 0;
-    bottom: 0;
-  }
-  
-  .dot-pattern::before {
-    content: "";
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: black;
-  }
-  
+.hero-title .club {
+  color: #111827;
+}
 
-  
+.hero-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  color: #6b7280;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  max-width: 28rem;
+}
+
+.decorative-star {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.star-1 {
+  top: 5rem;
+  right: 5rem;
+  width: 4rem;
+  height: 4rem;
+  color: #60a5fa;
+}
+
+.star-2 {
+  top: 8rem;
+  right: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fbbf24;
+}
+
+.star-3 {
+  bottom: 5rem;
+  right: 8rem;
+  width: 1rem;
+  height: 1rem;
+  color: #ef4444;
+}
+
+@media (min-width: 768px) {
   .hero-title {
-    font-family: 'BR Firma', sans-serif !important;
-
-    height: 53%;
-    
-    font-weight: 500;
-    width: 92%;
-    font-size: 48px !important;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 14px;
-
+    font-size: 6rem;
   }
-  
-  .text-grad {
-    font-family: 'BR Firma', sans-serif !important;
-    background: linear-gradient(to right, #A3280C, #657F95);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: 700;
-    font-size: 48px !important;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-  
-  
-  .hero-desc-container {
-    display: flex;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-desc-text {
-    color: #979797;
-    font-family: "BR Firma", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-    
-
-
-  .hero-description {
-
-    color: #666;
-    font-size: 1.125rem;
-    max-width: 36rem;
-    margin: 0 auto;
-  }
-  
+}

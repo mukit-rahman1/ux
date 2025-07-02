@@ -1,0 +1,39 @@
+.vision {
+  padding: 5rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.vision-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 2rem;
+}
+
+.vision-text {
+  color: #6b7280;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.vision-star-1 {
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  color: #34d399;
+  opacity: 0.6;
+}
+
+.vision-star-2 {
+  position: absolute;
+  left: 5rem;
+  bottom: 5rem;
+  width: 2rem;
+  height: 2rem;
+  color: #fbbf24;
+}
