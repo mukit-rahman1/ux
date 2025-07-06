@@ -81,6 +81,7 @@ export default function homepage() {
       {/* Core Values Section */}
       <section className="values">
         <div className="container">
+          <div className="values-content">
           <h2 className="values-title">
             Core Values
           </h2>
@@ -111,12 +112,11 @@ export default function homepage() {
               <h3 className="value-title">Inclusivity</h3>
             </div>
           </div>
-
-          <div className="values-cta">
             <a href="#" className="btn btn-primary">
               Meet Our Team <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
             </a>
           </div>
+
         </div>
       </section>
 
