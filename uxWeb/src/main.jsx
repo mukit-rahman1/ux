@@ -5,6 +5,7 @@ import Homepage from './pages/homepage.jsx'
 import Hackathon from './pages/hackathon.jsx'
 import Layout from "./components/Layout.jsx";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import "./styles/index.css";
 
 const router = createBrowserRouter([
   {
