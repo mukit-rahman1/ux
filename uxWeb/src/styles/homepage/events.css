@@ -1,19 +1,26 @@
 .events {
   padding: 5rem 0;
+  top: 390px;
+  position: relative;
 }
 
 .events-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 4rem;
-}
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 1.1;
 
-.events-title .upcoming {
-  color: #2563eb;
-}
+  text-align: left;
 
-.events-title .events-word {
-  color: #dc2626;
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6rem;
+
+  height: 262px;
+  width: 550px;
+  white-space: nowrap;  
 }
 
 .events-grid {
@@ -49,8 +56,11 @@
 }
 
 .event-title {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
   margin-bottom: 0.75rem;
 }
 

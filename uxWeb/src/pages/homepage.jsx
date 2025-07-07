@@ -72,33 +72,27 @@ export default function homepage() {
 
           <div className="values-grid">
             <div className="card value-card creativity">
-              <div className="value-icon creativity">
-                
-              </div>
               <h3 className="value-title">Creativity</h3>
             </div>
 
             <div className="card value-card empathy">
-              <div className="value-icon empathy">
-              </div>
+
               <h3 className="value-title">Empathy</h3>
             </div>
 
             <div className="card value-card curiosity">
-              <div className="value-icon curiosity">
-              </div>
+
               <h3 className="value-title">Curiosity</h3>
             </div>
 
             <div className="card value-card inclusivity">
-              <div className="value-icon inclusivity">
-              </div>
+              
               <h3 className="value-title">Inclusivity</h3>
             </div>
           </div>
-            <a href="#" className="btn btn-primary">
-              Meet Our Team <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
-            </a>
+          <a href="#" className="meet-team-btn">
+            Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginLeft: "0.25rem", marginBottom: "0.3rem" }} />
+          </a>
           </div>
 
         </div>
@@ -108,7 +102,7 @@ export default function homepage() {
       <section className="events">
         <div className="container">
           <h2 className="events-title">
-            <span className="upcoming">Upcoming</span> <span className="events-word">Events</span>
+            Upcoming Events
           </h2>
 
           <div className="events-grid">
