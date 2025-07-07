@@ -11,10 +11,9 @@
   align-items: center;
   justify-content: center;
   max-width: 91vw;
-  max-height: 62.05px;
-
+  height: 62.05px;
   position: sticky;
-  top: 42px;
+  margin-top: 42px;
 
   border-radius: 3rem;
   margin-left: auto;
