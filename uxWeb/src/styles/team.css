@@ -28,7 +28,7 @@
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 134px;
 
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 36px;
@@ -36,7 +36,7 @@
 }
 
 .option {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 31.92px;
 
@@ -47,5 +47,64 @@
 
   height: 40px;
   border-radius: 32px;
+}
+
+.member-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 202.69px;
+  display: flex;
+  flex-direction: column;
+  height: 333.07px;
+
+}
+
+.executive-row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.member-border {
+  padding: 3px; 
+  position: relative;
+  background: linear-gradient(to bottom right, #A3280C, #8FB1BE);
+  height: 256.07px;
+  width: 100%;
+  border-radius: 20.85px;
+  box-sizing: border-box;
+}
+
+.member-textbox {
+  margin-top: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 53px;
+  gap: 4px;
+  line-height: 100%;
+
+}
+
+.member-role {
+  height: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(to right, #A3280C, #657F95);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.member-card {
+
+  background-color: white; /* or whatever card bg */
+  border-radius: 18.85px;
+  padding: 3px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
