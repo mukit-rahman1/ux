@@ -4,6 +4,15 @@
   padding: 4rem 0;
 }
 
+.container-footer {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  height: 100%;
+  position: relative;
+  top: 100px;
+}
+
 .footer-content {
   display: flex;
   flex-direction: column;

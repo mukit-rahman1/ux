@@ -4,8 +4,15 @@
   text-align: left;
   top: 360px;
   height: 107vh;
+  margin-bottom: 12rem;
 }
 
+.container-values {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  height: 88vh;
+}
 .values-content {
   width: 1225px;
   height: 100%;
