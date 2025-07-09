@@ -8,12 +8,13 @@ export default function hackathon() {
       <section className="hero-section-hackathon">
         <div className="container-hackathon">
           <div className="hero-grid-hk">
+
             <div className="hero-content-hk">
               <h1 className="hero-title-hk">
                 Designathon 2025
               </h1>
 
-              <p className="hero-subtitle-hk">December 3rd-5th, aaa2025 | In Person | Kingston, ON</p>
+              <p className="hero-subtitle-hk">December 3rd-5th, 2025 | In Person | Kingston, ON</p>
 
               <button className="hero-btn-hk">Apply Now →</button>
             </div>
@@ -67,9 +68,9 @@ export default function hackathon() {
               </p>
             </div>
 
-            <button className="sponsor-cta-hk">Become a Sponsor →</button>
+            <button className="sponsor-btn-hk">Become a Sponsor →</button>
           </div>
-        </div>
+        </div> 
       </section>
     </div>
   )
