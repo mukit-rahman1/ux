@@ -1,10 +1,10 @@
 import "../styles/homepage/globals.css"
-import "../styles/homepage/header.css"
+import "../styles/header.css"
 import "../styles/homepage/hero.css"
 import "../styles/homepage/vision.css"
 import "../styles/homepage/values.css"
 import "../styles/homepage/events.css"
-import "../styles/homepage/footer.css"
+import "../styles/footer.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
 
 export default function homepage() {
