@@ -1,4 +1,4 @@
-import "../styles/homepage/header.css";
+import "../styles/header.css";
 
 export default function Navbar() {
     return (
