@@ -1,6 +1,6 @@
 .events {
   padding: 5rem 0;
-  top: 390px;
+  top: 240px;
   position: relative;
 }
 
@@ -8,7 +8,7 @@
   font-size: 64px;
   font-weight: 600;
   font-family: "BR Firma", sans-serif;
-  line-height: 1.1;
+  line-height: 100%;
 
   text-align: left;
 
@@ -16,9 +16,8 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 6rem;
 
-  height: 262px;
+  height: 180px;
   width: 550px;
   white-space: nowrap;  
 }
@@ -26,16 +25,44 @@
 .events-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 6rem;
   margin-bottom: 3rem;
+  width: 180vw;
+  height: 485px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-events {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  height: 140vh;
+}
+.events-grid > .event-card:first-of-type {
+  filter: blur(4px);
+}
+.events-grid > .event-card:last-of-type {
+  filter: blur(4px);
 }
 
 .event-card {
   background: white;
   border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+    20px 20px 30px 0px #98979580,
+    -20px -20px 30px 0px #FFFFFF;
+
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
 }
+
 
 .event-image {
   width: 100%;
@@ -45,7 +72,13 @@
 }
 
 .event-content {
-  padding: 1.5rem;
+  width: 218px;
+  height: 216px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .event-category {
@@ -56,7 +89,7 @@
 }
 
 .event-title {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 600;
   font-family: "BR Firma", sans-serif;
   line-height: 100%;
@@ -64,14 +97,41 @@
   margin-bottom: 0.75rem;
 }
 
-.event-description {
-  color: #6b7280;
-  font-size: 0.875rem;
-  line-height: 1.5;
+.event-title-colour {
+  background: linear-gradient(to right, #A3280C, #657F95);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.events-cta {
-  text-align: center;
+.event-description {
+  font-family: "BR Firma", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.events-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  background-color: #00022B;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
