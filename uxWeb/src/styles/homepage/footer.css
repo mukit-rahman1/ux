@@ -1,16 +1,14 @@
 .footer {
   background-color: #00022B;
   color: white;
-  padding: 4rem 0;
+  overflow: hidden;
+  height: 447px;
 }
 
 .container-footer {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 0rem;
-  height: 100%;
   position: relative;
-  top: 100px;
 }
 
 .footer-content {
@@ -48,6 +46,14 @@
 .social-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.ux-logo-footer {
+  width: 756.6px;
+  height: 553px;
+
+  position: relative;
+  transform: translateY(-12%);
 }
 
 @media (min-width: 768px) {

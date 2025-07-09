@@ -26,7 +26,6 @@
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -100,6 +99,7 @@
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
   color: white;
+  font-family: "BR Firma", sans-serif;
 }
 
 .contact-btn:hover {

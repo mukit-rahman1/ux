@@ -3,9 +3,9 @@ import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
 export default function Footer() {
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="container-footer">
             <div className="footer-content">
-                <div className="footer-logo">UX</div>
+                <img src="../Logo (2).svg" alt="UX" className="ux-logo-footer"/>
                 <div className="social-links">
                 <a href="#">
                     <Mail className="social-icon" />
