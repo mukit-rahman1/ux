@@ -1,25 +1,29 @@
 
   /* Hero Section */
   .hero-section-hackathon {
-    padding: 4rem 0;
+    padding: 12rem 0 0 0;
   }
 
   .container-hackathon{
-    max-width: 1220px;
-    margin: 0 auto;
+    max-width: 1150px;
+    margin-left: 14vw;
+    
     position: relative;
   }
   
   .hero-grid-hk {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     gap: 3rem;
     align-items: center;
+    justify-content: space-between;
   }
   
   .hero-content-hk {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
   }
   
   .hero-title-hk {
@@ -46,23 +50,31 @@
     font-family: "BR Firma", sans-serif;
     line-height: 100%;
     letter-spacing: 0px;
-    
+    margin-bottom: 1rem;
   }
   
   .hero-btn-hk {
-    background-color: #111827;
+    background: #00022B;
     color: white;
-    padding: 0.75rem 2rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 9999px;
-    font-size: 1.125rem;
+    font-size: 24px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.5s ease-in-out;
     align-self: flex-start;
+
+    font-family: "BR Firma", sans-serif;
+    font-weight:500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
   }
   
   .hero-btn-hk:hover {
-    background-color: #1f2937;
+    background: #00022B linear-gradient(to right, #A3280C, #657F95);
   }
   
   .hero-image-container-hk {
