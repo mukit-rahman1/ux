@@ -51,12 +51,12 @@
 
 .hero-text {
   flex: 1;
-  color: black;
+  color: #000000;
 
   font-family: "BR Firma", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 100%;
+  line-height: 125%;
   letter-spacing: 0px;
   vertical-align: middle;
 
@@ -73,12 +73,10 @@
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  background-color: #00022B;
+  background: #00022B;
   margin-bottom: 2rem;
   
-
-  height: 56px;
-  width: 112px;
+  padding: 0.5rem 1rem;
   font-size: 24px;
   font-weight: 600;
   font-family: "BR Firma", sans-serif;
@@ -90,7 +88,7 @@
 }
 
 .join-btn:hover {
-  background: linear-gradient(to right, #A3280C, #657F95);
+  background: #00022B linear-gradient(to right, #A3280C, #657F95);
 }
 
 .decorative-star {

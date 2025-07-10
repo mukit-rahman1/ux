@@ -15,8 +15,6 @@
   padding: 5rem 0;
   position: relative;
   text-align: right;
-
-
   top: 210px;
 }
 
@@ -48,7 +46,7 @@
   color: black;
   font-size: 18px;
   font-weight: 500;
-  line-height: 100%;
+  line-height: 125%;
   letter-spacing: 0px;
 }
 

@@ -56,3 +56,24 @@
   .sponsor-btn-hk:hover {
     background: #00022B linear-gradient(to right, #A3280C, #657F95);
   }
+
+  .hm_tr {
+    position: absolute;
+    top: 38%;
+    right: 0%;
+    transform: translateY(-50%);
+  }
+
+  .hm_bl {
+    position: absolute;
+    top: 109%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+
+  .card img{
+    position: absolute;
+    bottom: 1.2%;
+    right: 1.8%;
+
+  }
