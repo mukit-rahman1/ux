@@ -12,7 +12,6 @@ export default function homepage() {
     <div>
       {/* Hero Section */}
       <section className="hero">
-        {/* Decorative Stars */}
        
         {/* Hero Content */}
         <div className="container">
@@ -24,7 +23,7 @@ export default function homepage() {
                 UX Club
               </h1>
               <div href="#" className="join-btn">
-                Join <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
+                Join <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
               </div>
             </div>
             <div className="hero-body">
@@ -70,25 +69,29 @@ export default function homepage() {
           <div className="values-grid">
             <div className="card value-card creativity">
               <h3 className="value-title">Creativity</h3>
+              <img src="creativity.svg" alt="" />
             </div>
 
             <div className="card value-card empathy">
 
               <h3 className="value-title">Empathy</h3>
+              <img src="empathy.svg" alt="" />
             </div>
 
             <div className="card value-card curiosity">
 
               <h3 className="value-title">Curiosity</h3>
+              <img src="curiosity.svg" alt="" />
             </div>
 
             <div className="card value-card inclusivity">
               
               <h3 className="value-title">Inclusivity</h3>
+              <img src="inclusivity.svg" alt="" />
             </div>
           </div>
           <a href="#" className="meet-team-btn">
-            Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginLeft: "0.25rem", marginBottom: "0.3rem" }} />
+            Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
           </a>
           </div>
 
@@ -146,6 +149,12 @@ export default function homepage() {
           </a>
         </div>
       </section>
+
+      {/* stars */}
+      <div className="stars">
+        <img src="../hm_tr.svg" className="hm_tr" alt="" />
+        <img src="../hm_bl.svg" className="hm_bl" alt="" />
+      </div>
 
     </div>
   )

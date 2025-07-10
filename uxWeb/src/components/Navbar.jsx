@@ -3,7 +3,7 @@ import "../styles/header.css";
 export default function Navbar() {
     return (
         <div className="navbar-home">
-            <div className="logo w-[60px] h-[46px]">
+            <div className="logo">
                 <img src="../Logo.svg" alt="UX" className="ux-logo"/>
             </div>
             <div className="nav-links">
