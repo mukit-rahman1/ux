@@ -121,18 +121,18 @@ const getBlurForCard = (index) => {
         onScroll={handleScroll}
       >
         {/* Leading spacer for layout */}
-        <div className="shrink-0 w-[433px] h-[529px]" />
+        <div className="shrink-0 w-[433px] h-[559px]" />
         {[...Array(cardNum)].map((_, index) => (
           <div
             key={index}
-            className="shrink-0 w-[433px] h-[529px] transition-all duration-200"
+            className="shrink-0 w-[433px] h-[559px] transition-all duration-200"
             style={{ filter: getBlurForCard(index) }}
           >
             <EventCard type="previous" />
           </div>
         ))}
         {/* Trailing spacer for layout */}
-        <div className="shrink-0 w-[433px] h-[529px]" />
+        <div className="shrink-0 w-[433px] h-[559px]" />
       </div>
     </div>
   );

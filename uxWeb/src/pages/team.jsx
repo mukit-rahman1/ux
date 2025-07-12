@@ -65,6 +65,8 @@ function Team() {
             <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
             <div className="mt-[33px]">
                 {(() => {
+                    console.log("yes", selected)
+                    console.log("yes", teamData[selected])
                     const director = teamData[selected].find((member) => member.role === "Director");
                     return director ? (
                         <div className="member-container mb-[66.93px]">

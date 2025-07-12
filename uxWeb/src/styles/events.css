@@ -24,16 +24,6 @@
   cursor: -webkit-grabbing;
 }
 
-.blur-mask {
-  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-}
 
 .event-card {
   background: #FFFCF5;
