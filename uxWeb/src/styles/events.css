@@ -1,19 +1,89 @@
-.events-mini-navbar {
+.events {
+  padding: 5rem 0;
+  top: 240px;
+  position: relative;
+}
+
+.container-events {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  height: 140vh;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.blur-mask {
+  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.event-card {
+  background: #FFFCF5;
+  border-radius: 50px;
+  box-shadow: 
+    20px 20px 30px 0px #98979580,
+    -20px -20px 30px 0px #FFFFFF;
+
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
-  width: 679px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-bottom: 134px;
-
-  box-shadow: 0px 4px 4px 0px #00000040;
-  border-radius: 36px;
-  background-color: white;
-
+  align-items: center;
+  padding: 4rem;
+  width: 825px;
 }
+
+
+.event-content {
+  width: 218px;
+  height: 216px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-bottom: 0.75rem;
+}
+
+.event-title-colour {
+  background: linear-gradient(to right, #A3280C, #657F95);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event-description {
+  font-family: "BR Firma", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #000000;
+}
+

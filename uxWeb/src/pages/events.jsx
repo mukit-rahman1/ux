@@ -1,5 +1,8 @@
 import { useState } from "react";
+import "../styles/events.css"
 import MiniNavbar from "../components/MiniNavbar";
+import EventCard from "../components/EventCard";
+import EventCarousel from "../components/EventCarousel";
 
 export default function Events () {
     const [selected, setSelected] = useState("events")
@@ -8,6 +11,8 @@ export default function Events () {
         {label: "Events", value: "events"},
         {label: "Workshops", value: "workshop"}
     ];
+
+   
 
     return (
         <div  className="min-h-[1330px]">
@@ -18,8 +23,12 @@ export default function Events () {
             <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected}/>
             <div>
                 <h2 className="">Upcoming Events</h2>
-
+                <div className="flex items-center justify-center mt-50">
+                    <EventCarousel/>
+                </div>
             </div>
+         
+
         </div> 
     )
 }
