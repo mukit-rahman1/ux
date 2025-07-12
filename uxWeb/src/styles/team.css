@@ -2,26 +2,13 @@
   width: 757px;
 }
 
-.red-text {
-  font-family: "BR Firma", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 100%;
-  width: 374px;
-  height: 27px;
-  color: #D53302;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mini-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   
 
-  width: 750px;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
   padding-top: 8px;

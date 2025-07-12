@@ -1,4 +1,5 @@
 import "../styles/team.css";
+import MiniNavbar from "../components/MiniNavbar";
 import { useState } from "react";
 
 function Team() {
@@ -58,21 +59,10 @@ function Team() {
     return (
         <div className="min-h-[1330px]"> 
             <div className="mb-[33px]">
-                <h1 className="page-title">Our Team</h1>
+                <h1 className="h-[86px] w-[303px]">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>
             </div>
-            <div className="mini-navbar">
-                {
-                    navOptions.map((option) => (
-                        <button 
-                        key={option.value} 
-                        className={`option ${selected == option.value && ("bg-gradient-to-r from-[#8FB1BE] via-[#00022B] to-[#D53302] text-white")}`} 
-                        onClick={() => setSelected(option.value)}>
-                            {option.label}
-                        </button>
-                    ))
-                }
-            </div>
+            <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
             <div className="mt-[33px]">
                 {(() => {
                     const director = teamData[selected].find((member) => member.role === "Director");
