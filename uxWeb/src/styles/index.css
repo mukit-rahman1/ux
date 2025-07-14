@@ -1,22 +1,33 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "BR Firma";
-  src: url("./br-firma/BR Firma SemiBold.otf") format("opentype");
+    font-family: 'BR Firma';
+    src: url('./br-firma/BR Firma Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('./br-firma/BR Firma Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: larger;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('./br-firma/BR Firma Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url('./br-firma/BR Firma SemiBold.otf') format('opentype');
   font-weight: 600;
+  font-size: large;
 }
 
-@font-face {
-  font-family: "BR Firma";
-  src: url("./br-firma/BR Firma Medium.otf") format("opentype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "BR Firma";
-  src: url("../br-firma/BR Firma Light.otf") format("opentype");
-  font-weight: 400;
-}
 
 h1 {
   font-family: "BR Firma", sans-serif;
@@ -51,7 +62,7 @@ h2 {
 .red-text {
   font-family: "BR Firma", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
 
   color: #D53302;

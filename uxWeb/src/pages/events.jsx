@@ -13,7 +13,7 @@ export default function Events () {
     ];
 
     return (
-        <div  className="min-h-[1330px]">
+        <div className="min-h-[1330px]">
             <div className="mb-[33px]">
                 <h1 className="h-[86px] w-[639px]">Events & Workshops</h1>
                 <p className="red-text">Explore opportunities to learn UX research and design</p>
