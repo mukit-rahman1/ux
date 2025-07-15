@@ -3,6 +3,7 @@ import "../styles/homepage.css"
 import "../styles/footer.css"
 import EventCarousel from "../components/UpcomingEventCarousel"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
+import LinkButton from "../components/LinkButton"
 
 export default function homepage() {
   return (
@@ -19,9 +20,7 @@ export default function homepage() {
                 <br />
                 UX Club
               </h1>
-              <div href="#" className="join-btn">
-                Join <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
-              </div>
+              <LinkButton arrowStyle="up" className="join-btn">Join</LinkButton>
             </div>
             <div className="hero-body">
               <div className="hero-text">
@@ -87,17 +86,12 @@ export default function homepage() {
               <img src="inclusivity.svg" alt="" />
             </div>
           </div>
-          <a href="#" className="meet-team-btn">
-            Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
-          </a>
+          <LinkButton className="meet-team-btn" arrowStyle="up">Meet Our Team</LinkButton>
           </div>
 
         </div>
       </section>
-
-
-
-
+      
       {/* Upcoming Events Section */}
       <section className="events">
         <div className="container-events">
@@ -108,9 +102,7 @@ export default function homepage() {
          <div className="container-carousel">
             <EventCarousel cardNum={5} />
           </div>
-          <a href="#" className="events-btn">
-            See All Events <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
-          </a>
+          <LinkButton arrowStyle="up" className="events-btn" path="/events">See All Events</LinkButton>
         </div>
       </section>
 

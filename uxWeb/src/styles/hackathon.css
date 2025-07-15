@@ -53,17 +53,10 @@
 }
   
 .hero-btn-hk {
-    background: #00022B;
-    color: white;
     padding: 1rem 2rem;
-    border: none;
     border-radius: 9999px;
-    font-size: 24px;
-    cursor: pointer;
     transition: background-color 0.5s ease-in-out;
     align-self: flex-start;
-
-    font-family: "BR Firma", sans-serif;
     font-weight:500;
     line-height: 32px;
     letter-spacing: 0px;
@@ -72,9 +65,7 @@
     white-space: nowrap;
 }
   
-.hero-btn-hk:hover {
-    background: #00022B linear-gradient(to right, #A3280C, #657F95);
-}
+
   
 .hero-image-container-hk {
     position: relative;
@@ -125,18 +116,11 @@
 
   
 .sponsor-btn-hk {
-    background: #00022B;
-    color: #FFFCF5;
     padding: 1rem 2rem;
-    border: none;
     border-radius: 9999px;
-    cursor: pointer;
     transition: background 0.5s ease-in-out;
     margin-top: 3rem;
     margin-bottom: 15rem;
-
-    font-family: "BR Firma", sans-serif;
-    font-size: 24px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0px;

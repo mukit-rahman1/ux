@@ -1,4 +1,5 @@
 import "../styles/hackathon.css"
+import LinkButton from "../components/LinkButton"
 
 export default function hackathon() {
   return (
@@ -15,8 +16,7 @@ export default function hackathon() {
               </h1>
 
               <p className="hero-subtitle-hk">December 3rd-5th, 2025 | In Person | Kingston, ON</p>
-
-              <button className="hero-btn-hk">Apply Now →</button>
+              <LinkButton className="hero-btn-hk" arrowStyle="right">Apply Now</LinkButton>
             </div>
 
             <div className="hero-image-container-hk">
@@ -67,8 +67,7 @@ export default function hackathon() {
               define our Designathon experience.
               </p>
             </div>
-
-            <button className="sponsor-btn-hk">Become a Sponsor →</button>
+            <LinkButton className="sponsor-btn-hk" arrowStyle="right">Become a Sponsor</LinkButton>
           </div>
         </div> 
       </section>

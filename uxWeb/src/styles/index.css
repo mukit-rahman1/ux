@@ -59,6 +59,11 @@ h2 {
   line-height: 100%;
 }
 
+a {
+  font-family: "BR Firma", sans-serif;
+  font-weight: 600;
+}
+
 .red-text {
   font-family: "BR Firma", sans-serif;
   font-size: 20px;
