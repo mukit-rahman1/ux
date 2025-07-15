@@ -1,9 +1,8 @@
-@import "./homepage/navbar.css";
 @import "./homepage/hero.css";
+@import "./homepage/vision.css";
 @import "./homepage/values.css";
-@import "./homepage/sponsors.css";
-@import "./homepage/footer.css";
-@import "./homepage/cta.css";
+@import "./homepage/events.css";
+@import "./homepage/globals.css";
 
 @font-face {
     font-family: 'BR Firma';
@@ -73,15 +72,47 @@ main {
     background-color: #000;
     color: #fff;
   }
+
+  .hm_tr {
+    position: absolute;
+    top: 38%;
+    right: 0%;
+    transform: translateY(-50%);
+  }
+
+  .hm_bl {
+    position: absolute;
+    top: 109%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+  @media (max-width: 1440px) {
+
+  }
   
-  /* Responsive styles */
-  @media (min-width: 768px) {
-    .nav-links {
-      display: flex;
+  @media (max-width: 1024px) {
+    .hm_tr {
+      position: absolute;
+      top: 38%;
+      right: 0%;
+      transform: translateY(-50%);
+      width: 30%;
     }
   
-    .hero-title {
-      font-size: 3.75rem;
+    .hm_bl {
+      position: absolute;
+      top: 109%;
+      left: 0%;
+      transform: translateY(-50%);
+      width: 30%;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: flex;
     }
   
     .values-container {
@@ -93,3 +124,10 @@ main {
     }
   }
   
+
+  @media (max-width: 480px) {
+  }
+  @media (max-width: 375px) {
+  }
+  @media (max-width: 320px) {
+  }

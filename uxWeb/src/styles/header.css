@@ -109,7 +109,7 @@
   .navbar-home {
     max-width: 91vw;
     max-height: 62.05px;
-    gap: 15vw;
+    gap: 18vw;
   }
 }
 
@@ -117,7 +117,7 @@
   .navbar-home {
     max-width: 91vw;
     max-height: 62.05px;
-    gap: 14vw;
+    gap: 15vw;
   }
 
   .nav-links a {
