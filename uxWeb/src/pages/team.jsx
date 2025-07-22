@@ -1,5 +1,6 @@
 import "../styles/team.css";
 import MiniNavbar from "../components/MiniNavbar";
+import MemberCard from "../components/MemberCard";
 import { useState } from "react";
 
 function Team() {
@@ -59,38 +60,23 @@ function Team() {
     return (
         <div className="min-h-[1330px]"> 
             <div className="mb-[33px]">
-                <h1 className="h-[86px] w-[303px]">Our Team</h1>
+                <h1 className="">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>
             </div>
             <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
-            <div className="mt-[33px]">
+            <div className="mt-[33px] flex flex-col items-center gap-[66.93px]">
                 {(() => {
                     console.log("yes", selected)
                     console.log("yes", teamData[selected])
                     const director = teamData[selected].find((member) => member.role === "Director");
                     return director ? (
-                        <div className="member-container mb-[66.93px]">
-                            <div className="member-border"><div className="member-card"></div></div>
-                            <div className="member-textbox"> 
-                                <h3 className="text-[20px] font-[600] h-[27px]">{director.name}</h3>
-                                <p className="member-role">{director.role}</p>
-                            </div>
-                        </div>
+                        <MemberCard name={director.name} role={director.role}/>
                     ) : null;
                 })()}
 
                 <div className={`executive-row ${teamData[selected].length == 4 ? "w-[50%]" : "w-[65%]"}`}>
                     {teamData[selected].map((member, index) => (
-                        member.role != "Director" && (
-                            <div className="member-container" key={index}>
-                                <div className="member-border"><div className="member-card"></div></div>
-                                <div className="member-textbox"> 
-                                    <h3 className="text-[20px] font-[600] h-[27px]">{member.name}</h3>
-                                    <p className="member-role">{member.role}</p>
-                                </div>
-                            </div>
-                        )
-                        
+                        member.role != "Director" && <MemberCard name={member.name} role={member.role}/>            
                     ))}
                 </div>
 
