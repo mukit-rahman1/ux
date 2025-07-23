@@ -38,7 +38,7 @@
 
 .values-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.8rem;
   margin-bottom: 3rem;
   height: 65%;
@@ -175,14 +175,169 @@
 }
 
 
-@media (min-width: 768px) {
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1440px) {
+  .values {
+    top: 320px;
+    height: 100vh;
+  }
+
+  .container-values {
+    max-width: 1100px;
+  }
+
+  .values-content {
+    width: 100%;
+  }
+
+  .values-title {
+    font-size: 82px;
+    margin-bottom: 5rem;
+  }
+
+  .value-title {
+    font-size: 28px;
+  }
+
+  .meet-team-btn {
+    font-size: 22px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .values {
+    top: 280px;
+    height: auto;
+    margin-bottom: 8rem;
+  }
+
+  .container-values {
+    max-width: 900px;
+    height: auto;
+  }
+
+  .values-title {
+    font-size: 72px;
+    margin-bottom: 4rem;
+  }
+
   .values-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: auto;
+  }
+
+  .value-title {
+    font-size: 24px;
+  }
+
+  .meet-team-btn {
+    font-size: 20px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .values {
+    top: 240px;
+    padding: 3rem 0;
+  }
+
+  .container-values {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+
+  .values-title {
+    font-size: 56px;
+    margin-bottom: 3rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.2rem;
+  }
+
+  .value-title {
+    font-size: 20px;
+  }
+
+  .meet-team-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .values {
+    top: 200px;
+    padding: 2rem 0;
+  }
+
+  .container-values {
+    max-width: 95%;
+  }
+
+  .values-title {
+    font-size: 42px;
+    margin-bottom: 2.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .value-card {
+    padding: 1rem;
+  }
+
+  .value-title {
+    font-size: 18px;
+  }
+
+  .meet-team-btn {
+    font-size: 16px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .values {
+    top: 180px;
+  }
+
+  .values-title {
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+
+  .value-title {
+    font-size: 16px;
+  }
+
+  .meet-team-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .values {
+    top: 160px;
+  }
+
+  .values-title {
+    font-size: 32px;
+  }
+
+  .value-title {
+    font-size: 14px;
+  }
+
+  .meet-team-btn {
+    font-size: 13px;
+    padding: 0.3rem 0.7rem;
   }
 }

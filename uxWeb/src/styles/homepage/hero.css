@@ -92,15 +92,148 @@
 }
 
 @media (max-width: 1440px) {
+  .hero-content {
+    width: 650px;
+  }
+
+  .hero-title {
+    font-size: 96px;
+    height: 200px;
+    width: 450px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    top: 150px;
+  }
+
+  .hero-content {
+    width: 550px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    height: 160px;
+    width: 380px;
+  }
+
+  .hero-body {
+    height: 80px;
+  }
+
+  .join-btn {
+    font-size: 20px;
+  }
 }
+
 @media (max-width: 768px) {
+  .hero {
+    top: 120px;
+  }
+
+  .hero-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    height: 120px;
+    width: 300px;
+  }
+
+  .hero-body {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    align-self: center;
+    font-size: 18px;
+    padding: 0.4rem 0.8rem;
+  }
 }
+
 @media (max-width: 480px) {
+  .hero {
+    top: 100px;
+  }
+
+  .hero-content {
+    width: 95%;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    height: 90px;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .join-btn {
+    font-size: 16px;
+    padding: 0.3rem 0.7rem;
+  }
 }
+
 @media (max-width: 375px) {
+  .hero {
+    top: 90px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    height: 80px;
+    width: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text {
+    font-size: 12px;
+  }
+
+  .join-btn {
+    font-size: 14px;
+    padding: 0.3rem 0.6rem;
+  }
 }
+
 @media (max-width: 320px) {
+  .hero {
+    top: 80px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    height: 70px;
+    width: 200px;
+  }
+
+  .hero-body {
+    gap: 1rem;
+  }
+
+  .hero-text {
+    font-size: 11px;
+  }
+
+  .join-btn {
+    font-size: 13px;
+    padding: 0.25rem 0.5rem;
+  }
 }

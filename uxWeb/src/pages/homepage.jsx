@@ -1,6 +1,4 @@
-
 import "../styles/header.css"
-
 import "../styles/footer.css"
 import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"

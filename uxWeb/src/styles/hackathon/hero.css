@@ -90,3 +90,170 @@
     height: auto;
   }
   
+@media (max-width: 1440px) {
+  .container-hackathon {
+    max-width: 1000px;
+    margin-left: 12vw;
+  }
+
+  .hero-title-hk {
+    font-size: 56px;
+    height: 60px;
+    width: 520px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 18px;
+  }
+
+  .hero-btn-hk {
+    font-size: 22px;
+    padding: 0.9rem 1.8rem;
+  }
+
+  .hero-image-hk {
+    max-width: 24rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section-hackathon {
+    padding: 10rem 0 0 0;
+  }
+
+  .container-hackathon {
+    max-width: 800px;
+    margin-left: 10vw;
+  }
+
+  .hero-title-hk {
+    font-size: 48px;
+    height: 50px;
+    width: 450px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 16px;
+  }
+
+  .hero-btn-hk {
+    font-size: 20px;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .hero-image-hk {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-hackathon {
+    padding: 8rem 0 0 0;
+  }
+
+  .container-hackathon {
+    max-width: 90%;
+    margin-left: 5vw;
+  }
+
+  .hero-grid-hk {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .hero-title-hk {
+    font-size: 42px;
+    height: 45px;
+    width: 400px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 15px;
+  }
+
+  .hero-btn-hk {
+    font-size: 18px;
+    padding: 0.7rem 1.4rem;
+  }
+
+  .hero-image-hk {
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section-hackathon {
+    padding: 6rem 0 0 0;
+  }
+
+  .container-hackathon {
+    margin-left: 5vw;
+  }
+
+  .hero-title-hk {
+    font-size: 36px;
+    height: 40px;
+    width: 340px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 14px;
+  }
+
+  .hero-btn-hk {
+    font-size: 16px;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .hero-image-hk {
+    max-width: 16rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section-hackathon {
+    padding: 5rem 0 0 0;
+  }
+
+  .hero-title-hk {
+    font-size: 32px;
+    height: 35px;
+    width: 300px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 13px;
+  }
+
+  .hero-btn-hk {
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-image-hk {
+    max-width: 14rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-title-hk {
+    font-size: 28px;
+    height: 30px;
+    width: 260px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 12px;
+  }
+
+  .hero-btn-hk {
+    font-size: 14px;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .hero-image-hk {
+    max-width: 12rem;
+  }
+}
+  

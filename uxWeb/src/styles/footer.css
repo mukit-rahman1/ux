@@ -3,6 +3,7 @@
   color: white;
   overflow: hidden;
   height: 447px;
+  position: relative;
 }
 
 .container-footer {
@@ -13,7 +14,7 @@
 
 .footer-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -32,6 +33,7 @@
 .social-links {
   display: flex;
   gap: 1.5rem;
+
 }
 
 .social-links a {
@@ -51,13 +53,66 @@
 .ux-logo-footer {
   width: 756.6px;
   height: 553px;
-
   position: relative;
   transform: translateY(-12%);
 }
 
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
+@media (max-width: 1440px) {
+  .social-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-footer {
+    max-width: 90%;
+  }
+
+  .social-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .social-links {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .social-links {
+    gap: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .social-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .social-links {
+    gap: 0.8rem;
+    padding-bottom: 0.8rem;
   }
 }
