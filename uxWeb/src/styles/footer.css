@@ -58,6 +58,10 @@
 }
 
 @media (max-width: 1440px) {
+  .footer {
+    height: 447px;
+  }
+
   .social-icon {
     width: 1.4rem;
     height: 1.4rem;
@@ -65,6 +69,15 @@
 }
 
 @media (max-width: 1024px) {
+  .footer {
+    height: 300px;
+  }
+
+  .ux-logo-footer {
+    width: 500px;
+    height: 350px;
+  }
+
   .social-icon {
     width: 1.3rem;
     height: 1.3rem;
@@ -72,8 +85,17 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: 240px;
+  }
+
   .container-footer {
     max-width: 90%;
+  }
+
+  .ux-logo-footer {
+    width: 250px;
+    height: 175px;
   }
 
   .social-icon {
@@ -87,6 +109,11 @@
 }
 
 @media (max-width: 480px) {
+  .ux-logo-footer {
+    width: 200px;
+    height: 150px;
+  }
+
   .social-icon {
     width: 1.1rem;
     height: 1.1rem;
@@ -99,6 +126,11 @@
 }
 
 @media (max-width: 375px) {
+  .ux-logo-footer {
+    width: 150px;
+    height: 100px;
+  }
+
   .social-icon {
     width: 1rem;
     height: 1rem;
@@ -111,6 +143,9 @@
 }
 
 @media (max-width: 320px) {
+  .footer {
+    height: 240px;
+  }
   .social-links {
     gap: 0.8rem;
     padding-bottom: 0.8rem;

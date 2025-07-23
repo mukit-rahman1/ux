@@ -2,6 +2,7 @@
   padding: 5rem 0;
   top: 240px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .events-title {
@@ -27,12 +28,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 6rem;
   margin-bottom: 3rem;
+  padding-bottom: 2rem;
   width: 180vw;
   height: 485px;
-
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  overflow-x: hidden;
 }
 
 .container-events {
@@ -40,6 +42,7 @@
   margin: 0 auto;
   padding: 0 0rem;
   height: 140vh;
+  position: relative;
 }
 .events-grid > .event-card:first-of-type {
   filter: blur(4px);

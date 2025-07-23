@@ -92,17 +92,15 @@
   .vision-content {
     width: 90%;
     margin: 0 auto;
-    text-align: center;
+
   }
 
   .vision-title {
     font-size: 56px;
-    text-align: center;
   }
 
   .vision-text {
     font-size: 14px;
-    text-align: center;
   }
 }
 
