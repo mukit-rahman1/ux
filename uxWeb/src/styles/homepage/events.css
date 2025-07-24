@@ -77,7 +77,6 @@
 .event-content {
   width: 218px;
   height: 216px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +85,6 @@
 
 .event-category {
   font-size: 0.875rem;
-  color: #dc2626;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -137,3 +135,236 @@
   z-index: 2;
 }
 
+
+.event-image {
+  width: 374px;
+  height: 311px;
+  background-color: white;
+}
+
+
+@media (max-width: 1440px) {
+  .events-title {
+    font-size: 96px;
+    height: 200px;
+    width: 850px;
+  }
+
+  .event-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .event-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "BR Firma", sans-serif;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+
+  .event-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    width: 150vw;
+    height: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+  }
+
+  .event-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 
+      20px 20px 30px 0px #98979580,
+      -20px -20px 30px 0px #FFFFFF;
+  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .event-image {
+    width: 330px;
+    height: auto;
+    background-color: white;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .event-content {
+    width: 80%;
+    height: 100%;
+  }
+
+  .events-title {
+    font-size: 72px;
+    height: 160px;
+    width: 700px;
+  }
+
+
+  .event-title {
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-description {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 56px;
+    height: 120px;
+    width: 500px;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    width: 150vw;
+    height: 550px;
+  }
+  .event-title {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+
+  .event-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .event-description {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .events-title {
+    font-size: 42px;
+    height: 90px;
+    width: 380px;
+    margin-bottom: 1.5rem;
+  }
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    width: 180vw;
+    height: 480px;
+  }
+
+  .event-image {
+    width: 220px;
+    height: 200px;
+    background-color: white;
+  }
+
+  .event-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .event-card {
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .event-description {
+    font-size: 9px;
+  }
+  
+}
+
+@media (max-width: 375px) {
+  .events-title {
+    font-size: 36px;
+    height: 80px;
+    width: 320px;
+    margin-bottom: 1rem;
+  }
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    width: 180vw;
+    height: 430px;
+  }
+
+  .event-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .event-title {
+    font-size: 20px;
+  }
+
+  .event-description {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .events-title {
+    font-size: 32px;
+    height: 70px;
+    width: 280px;
+  }
+
+  .event-image {
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .event-title {
+    font-size: 18px;
+  }
+
+  .event-description {
+    font-size: 7px;
+  }
+
+
+  .events-btn {
+    font-size: 16px;
+  }
+}

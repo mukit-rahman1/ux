@@ -111,7 +111,7 @@ export default function homepage() {
                 </p>
               </div>
 
-              <img src="../Group 10.svg" className="h-[311px] w-[374px]" alt="Event" />
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
             </div>
 
             <div className="event-card">
@@ -124,7 +124,7 @@ export default function homepage() {
                 </p>
               </div>
               
-              <img src="../Group 10.svg" className="h-[311px] w-[374px]" alt="Event" />
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
             </div>
 
             <div className="event-card">
@@ -136,7 +136,7 @@ export default function homepage() {
                 </p>
               </div>
 
-              <img src="../Group 10.svg" className="h-[311px] w-[374px]" alt="Event" />
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
             </div>
           </div>
 
