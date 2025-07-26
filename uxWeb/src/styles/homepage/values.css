@@ -3,7 +3,7 @@
   position: relative;
   text-align: left;
   top: 360px;
-  height: 107vh;
+  height: 900px;
   margin-bottom: 12rem;
 }
 
@@ -11,7 +11,7 @@
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 0rem;
-  height: 88vh;
+  height: 750px;
 }
 .values-content {
   width: 1225px;
@@ -28,6 +28,7 @@
   letter-spacing: 0px;
 
   text-align: left;
+  z-index: 1;
 
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
@@ -52,11 +53,26 @@
   height: 100%;
 }
 
+.value-description {
+  font-size: 16px;
+  font-family: "BR Firma", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: #00022b;
+  letter-spacing: 0px;
+  line-height: 120%;
+  max-width: 232px;
+
+  position: relative;
+  padding-top: 5.5rem;
+}
+
 .value-card.creativity {
   position: relative;
   background: white; /* card bg */
   border-radius: 20px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .value-card.creativity::before {
@@ -79,6 +95,7 @@
   background: white; /* card bg */
   border-radius: 20px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .value-card.empathy::before {
@@ -101,6 +118,7 @@
   background: white; /* card bg */
   border-radius: 20px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .value-card.curiosity::before {
@@ -123,6 +141,7 @@
   background: white; /* card bg */
   border-radius: 20px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .value-card.inclusivity::before {
@@ -177,21 +196,25 @@
 
 @media (max-width: 1440px) {
   .values {
-    top: 320px;
-    height: 100vh;
+    padding: 6.5rem 0;
+    top: 360px;
+    height: 900px;
   }
 
   .container-values {
-    max-width: 1100px;
+    max-width: 1200px;
+    height: 750px;
+    padding: 0 2rem 0 2rem;
   }
 
   .values-content {
     width: 100%;
+    height: 100%;
   }
 
   .values-title {
     font-size: 82px;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 
   .value-title {
@@ -201,18 +224,22 @@
   .meet-team-btn {
     font-size: 22px;
   }
+
+  .values-grid {
+    height: 65%;
+  }
 }
 
 @media (max-width: 1024px) {
   .values {
-    top: 280px;
-    height: auto;
-    margin-bottom: 8rem;
+    top: 360px;
+    height: 1500px;
+    margin-bottom: 2rem;
   }
 
   .container-values {
     max-width: 900px;
-    height: auto;
+    height: 100%;
   }
 
   .values-title {
@@ -222,17 +249,17 @@
 
   .values-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    height: auto;
+    gap: 4rem;
+    height: 100%;
   }
 
   .value-title {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .meet-team-btn {
     font-size: 20px;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 }
 
@@ -240,11 +267,12 @@
   .values {
     top: 240px;
     padding: 3rem 0;
+    height: 1900px;
   }
 
   .container-values {
     max-width: 90%;
-    padding: 0 1rem;
+    padding: 0 2rem 0 2rem;
   }
 
   .values-title {
@@ -253,16 +281,17 @@
   }
 
   .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
 
   .value-card {
     padding: 1.2rem;
+    margin: 0 3rem 0 3rem;
   }
 
   .value-title {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .meet-team-btn {
@@ -274,6 +303,7 @@
   .values {
     top: 200px;
     padding: 2rem 0;
+    height: 2100px;
   }
 
   .container-values {
@@ -287,15 +317,16 @@
 
   .values-grid {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 3rem;
   }
 
   .value-card {
+    margin: 0rem 2rem 0rem 2rem;
     padding: 1rem;
   }
 
   .value-title {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .meet-team-btn {
@@ -306,7 +337,14 @@
 
 @media (max-width: 375px) {
   .values {
+    background-color: blue;
     top: 180px;
+    height: 1800px;
+  }
+
+  .value-card {
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
   }
 
   .values-title {
@@ -315,7 +353,7 @@
   }
 
   .value-title {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .meet-team-btn {
@@ -325,6 +363,7 @@
 
 @media (max-width: 320px) {
   .values {
+    background-color: purple;
     top: 160px;
   }
 

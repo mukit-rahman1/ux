@@ -2,8 +2,15 @@ import "../styles/header.css"
 import "../styles/footer.css"
 import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
+import { useState } from "react"
 
 export default function homepage() {
+  const [showCreativityText, setShowCreativityText] = useState(false);
+  const [showEmpathyText, setShowEmpathyText] = useState(false);
+  const [showCuriosityText, setShowCuriosityText] = useState(false);
+  const [showInclusivityText, setShowInclusivityText] = useState(false);
+
+
   return (
     <div>
       {/* Hero Section */}
@@ -63,27 +70,71 @@ export default function homepage() {
           </h2>
 
           <div className="values-grid">
-            <div className="card value-card creativity">
-              <h3 className="value-title">Creativity</h3>
-              <img src="creativity.svg" alt="" />
+            <div className="card value-card creativity" onClick={() => setShowCreativityText(!showCreativityText)}>
+            <h3 className="value-title">Creativity</h3>
+             { showCreativityText ? (
+              <p className="value-description">
+              We believe great design begins with imagination. Whether we’re prototyping, 
+              brainstorming, or running a workshop, we encourage bold ideas and fresh thinking 
+              in everything we do.
+              </p>
+            ) : (
+              <>
+                <img src="creativity.svg" alt="" />
+              </>
+              )
+            }
             </div>
 
-            <div className="card value-card empathy">
+            <div className="card value-card empathy" onClick={() => setShowEmpathyText(!showEmpathyText)}>
 
               <h3 className="value-title">Empathy</h3>
+              { showEmpathyText ? (
+              <p className="value-description">
+              At the heart of UX is understanding people. We approach every project, 
+              conversation, and challenge with empathy, striving to design with, not just for, 
+              our users and peers.
+              </p>
+            ) : (
+              <>
               <img src="empathy.svg" alt="" />
+              </>
+            )
+            }
             </div>
 
-            <div className="card value-card curiosity">
+            <div className="card value-card curiosity" onClick={() => setShowCuriosityText(!showCuriosityText)}>
 
               <h3 className="value-title">Curiosity</h3>
+              { showCuriosityText ? (
+              <p className="value-description">
+              We’re driven by questions and the desire to keep learning. 
+              From exploring new tools to diving into complex design problems, 
+              we foster a culture of exploration and growth.
+              </p>
+            ) : (
+              <>
               <img src="curiosity.svg" alt="" />
+              </>
+            )
+            }
             </div>
 
-            <div className="card value-card inclusivity">
+            <div className="card value-card inclusivity" onClick={() => setShowInclusivityText(!showInclusivityText)}>
               
               <h3 className="value-title">Inclusivity</h3>
+              { showInclusivityText ? (
+              <p className="value-description">
+              We welcome students of all backgrounds, disciplines, and experience levels, 
+              creating a safe and supportive space where everyone’s voice matters. 
+              By embracing diverse perspectives, we design more thoughtful and accessible experiences.
+              </p>
+            ) : (
+              <>
               <img src="inclusivity.svg" alt="" />
+              </>
+            )
+            }
             </div>
           </div>
           <a href="#" className="meet-team-btn">
