@@ -65,6 +65,33 @@
 
   }
 
+@media (min-width: 2500px) {
+  .section-content-hk {
+    max-width: 2000px;
+  }
+
+  .section-title-hk {
+    font-size: 48px;
+  }
+
+  .section-text-hk {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .section-content-hk {
+    max-width: 1600px;
+  }
+
+  .section-title-hk {
+    font-size: 42px;
+  }
+
+  .section-text-hk {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1440px) {
   .section-title-hk {
     margin-top: 8rem;

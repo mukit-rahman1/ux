@@ -69,7 +69,7 @@
 
 .value-card.creativity {
   position: relative;
-  background: white; /* card bg */
+  background: white; 
   border-radius: 20px;
   z-index: 1;
   cursor: pointer;
@@ -79,8 +79,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  padding: 6px; /* border thickness */
-  border-radius: 16px; /* same as card */
+  padding: 6px; 
+  border-radius: 16px; 
   background: linear-gradient(to right, #A3280C, #657F95);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -193,6 +193,79 @@
   background: #00022B linear-gradient(to right, #A3280C, #657F95);
 }
 
+@media (min-width: 2500px) {
+  .values-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .values {
+    padding: 10rem 0;
+    height: 1200px;
+  }
+
+  .container-values {
+    max-width: 2000px;
+    height: 1000px;
+  }
+
+  .values-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .values-grid {
+    gap: 6rem;
+  }
+
+  .value-title {
+    font-size: 48px;
+  }
+
+  .value-description {
+    font-size: 20px !important;
+    max-width: 400px;
+  }
+
+  .meet-team-btn {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .values-title {
+    font-size: 136px !important;
+    height: 115px !important;
+    width: 810px !important;
+  }
+
+
+  .container-values {
+    max-width: 1600px !important;
+    height: 800px !important;
+  }
+
+  .values-content {
+    width: 100% !important;
+  }
+
+  .values-grid {
+    gap: 4rem;
+  }
+  .value-title {
+    font-size: 42px;
+  }
+  .value-description {
+    font-size: 20px;
+    max-width: 300px;
+  }
+
+  .meet-team-btn {
+    font-size: 28px;
+  }
+}
 
 @media (max-width: 1440px) {
   .values {
@@ -380,3 +453,6 @@
     padding: 0.3rem 0.7rem;
   }
 }
+
+
+

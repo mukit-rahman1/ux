@@ -50,6 +50,21 @@
   letter-spacing: 0px;
 }
 
+@media (min-width: 2560px) {
+  .vision-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .vision-text {
+    font-size: 22px !important;
+  }
+
+  .vision-content {
+    width: 900px !important;
+  }
+}
 @media (max-width: 1440px) {
   .vision-content {
     width: 650px;
@@ -60,7 +75,7 @@
   }
 
   .vision-text {
-    font-size: 16px;
+    font-size: 20px !important;
   }
 }
 

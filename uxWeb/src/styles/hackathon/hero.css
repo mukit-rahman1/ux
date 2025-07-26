@@ -89,6 +89,57 @@
     max-width: 28rem;
     height: auto;
   }
+
+@media (min-width: 2500px) {
+  .container-hackathon {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .hero-title-hk {
+    font-size: 112px;
+    height: 125px;
+    width: 1020px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 28px;
+    margin-bottom: 3rem;
+  }
+
+
+  .hero-image-hk {
+    max-width: 32rem;
+  }
+
+}
+
+@media (min-width: 1921px) {
+  .container-hackathon {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero-title-hk {
+    font-size: 88px;
+    height: 115px;
+    width: 820px;
+  }
+
+  .hero-subtitle-hk {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btn-hk {
+    font-size: 24px;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .hero-image-hk {
+    max-width: 28rem;
+  }
+}
   
 @media (max-width: 1440px) {
   .container-hackathon {
