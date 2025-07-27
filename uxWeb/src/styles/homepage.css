@@ -32,6 +32,13 @@
   font-size: large;
 }
 
+.container-homepage {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+}
+
+
 html, body {
   height: 100%;
 }
@@ -78,6 +85,7 @@ main {
     top: 38%;
     right: 0%;
     transform: translateY(-50%);
+    z-index: -1;
   }
 
   .hm_bl {
@@ -85,6 +93,7 @@ main {
     top: 109%;
     left: 0%;
     transform: translateY(-50%);
+    z-index: -1;
   }
 
   @media (min-width: 2500px) {

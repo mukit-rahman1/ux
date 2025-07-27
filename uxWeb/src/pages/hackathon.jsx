@@ -1,11 +1,21 @@
 import "../styles/hackathon.css"
+import { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function hackathon() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
+
   return (
     <div className="page-container-hackathon">
 
       {/* Hero Section */}
-      <section className="hero-section-hackathon">
+      <section className="hero-section-hackathon" data-aos="fade-right">
         <div className="container-hackathon">
           <div className="hero-grid-hk">
 
@@ -31,7 +41,7 @@ export default function hackathon() {
       </section>
 
       {/* The Place for All Designers Section */}
-      <section className="content-section-hackathon">
+      <section className="content-section-hackathon" data-aos="fade-left">
         <div className="container-hackathon">
           <div className="section-content-hk">
             <h2 className="section-title-hk">The Place for All Designers</h2>
@@ -54,7 +64,7 @@ export default function hackathon() {
       </section>
 
       {/* Sponsor Section */}
-      <section className="content-section-hackathon">
+      <section className="content-section-hackathon" data-aos="fade-up">
         <div className="container-hackathon">
           <div className="section-content-hk">
             <h2 className="section-title-hk">Sponsor the launch of design packed weekend</h2>

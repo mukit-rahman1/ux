@@ -270,7 +270,7 @@
 @media (max-width: 1440px) {
   .values {
     padding: 6.5rem 0;
-    top: 360px;
+    top: 250px;
     height: 900px;
   }
 
@@ -410,7 +410,6 @@
 
 @media (max-width: 375px) {
   .values {
-    background-color: blue;
     top: 180px;
     height: 1800px;
   }
@@ -436,7 +435,6 @@
 
 @media (max-width: 320px) {
   .values {
-    background-color: purple;
     top: 160px;
   }
 

@@ -6,8 +6,7 @@
 
   .container-hackathon{
     max-width: 1150px;
-    margin-left: 14vw;
-    
+    margin: 0 auto;
     position: relative;
   }
   
@@ -143,8 +142,8 @@
   
 @media (max-width: 1440px) {
   .container-hackathon {
-    max-width: 1000px;
-    margin-left: 12vw;
+    max-width: 850px;
+    margin: 0 auto;
   }
 
   .hero-title-hk {
@@ -173,18 +172,19 @@
   }
 
   .container-hackathon {
-    max-width: 800px;
-    margin-left: 10vw;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .hero-title-hk {
-    font-size: 48px;
-    height: 50px;
-    width: 450px;
+    padding: 1rem 0 0 0;
+    font-size: 38px;
+    height: 60px;
+    width: 350px;
   }
 
   .hero-subtitle-hk {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .hero-btn-hk {
@@ -195,11 +195,12 @@
   .hero-image-hk {
     max-width: 20rem;
   }
+  
 }
 
 @media (max-width: 768px) {
   .hero-section-hackathon {
-    padding: 8rem 0 0 0;
+    padding: 7rem 0 0 0;
   }
 
   .container-hackathon {
@@ -209,13 +210,13 @@
 
   .hero-grid-hk {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: flex-start;
   }
 
   .hero-title-hk {
     font-size: 42px;
-    height: 45px;
+    height: 60px;
     width: 400px;
   }
 
@@ -224,12 +225,12 @@
   }
 
   .hero-btn-hk {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.7rem 1.4rem;
   }
 
   .hero-image-hk {
-    max-width: 18rem;
+    max-width: 16rem;
   }
 }
 
@@ -244,12 +245,17 @@
 
   .hero-title-hk {
     font-size: 36px;
-    height: 40px;
+    height: 55px;
     width: 340px;
+  }
+
+  .hero-content-hk {
+    gap: 1rem;
   }
 
   .hero-subtitle-hk {
     font-size: 14px;
+    margin-bottom: 0.5rem;
   }
 
   .hero-btn-hk {
@@ -258,7 +264,7 @@
   }
 
   .hero-image-hk {
-    max-width: 16rem;
+    max-width: 14rem;
   }
 }
 
@@ -269,7 +275,7 @@
 
   .hero-title-hk {
     font-size: 32px;
-    height: 35px;
+    height: 45px;
     width: 300px;
   }
 
@@ -290,12 +296,12 @@
 @media (max-width: 320px) {
   .hero-title-hk {
     font-size: 28px;
-    height: 30px;
+    height: 45px;
     width: 260px;
   }
 
   .hero-subtitle-hk {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .hero-btn-hk {

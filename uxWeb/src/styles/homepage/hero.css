@@ -156,6 +156,10 @@
     width: 380px;
   }
 
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
   .hero-body {
     height: 80px;
   }
@@ -215,7 +219,7 @@
   }
 
   .hero-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 120%;
   }
 

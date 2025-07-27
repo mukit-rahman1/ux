@@ -71,11 +71,11 @@
   }
 
   .vision-title {
-    font-size: 82px;
+    font-size: 96px;
   }
 
   .vision-text {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -115,7 +115,7 @@
   }
 
   .vision-text {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -131,10 +131,11 @@
 
   .vision-title {
     font-size: 42px;
+    margin-bottom: 1.5rem;
   }
 
   .vision-text {
-    font-size: 13px;
+    font-size: 12px !important;
     line-height: 120%;
   }
 }
@@ -162,10 +163,11 @@
 
   .vision-title {
     font-size: 32px;
+    margin-bottom: 0.6rem;
   }
 
   .vision-text {
-    font-size: 11px;
+    font-size: 10px !important;
   }
 }
 

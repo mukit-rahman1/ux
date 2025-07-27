@@ -2,13 +2,22 @@ import "../styles/header.css"
 import "../styles/footer.css"
 import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);
   const [showEmpathyText, setShowEmpathyText] = useState(false);
   const [showCuriosityText, setShowCuriosityText] = useState(false);
   const [showInclusivityText, setShowInclusivityText] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
 
 
   return (
@@ -17,8 +26,8 @@ export default function homepage() {
       <section className="hero">
        
         {/* Hero Content */}
-        <div className="container">
-          <div className="hero-content">
+        <div className="container-homepage">
+          <div className="hero-content" data-aos="fade-right">
             <div className="hero-top">
               <h1 className="hero-title">
                 Queen's
@@ -48,8 +57,8 @@ export default function homepage() {
         {/* vision stars */}
 
         {/* vision content */}
-        <div className="container">
-          <div className="vision-content">
+        <div className="container-homepage">
+          <div className="vision-content" data-aos="fade-left">
           <h2 className="vision-title">Vision</h2>
           <p className="vision-text">
             To be the leading student-driven community at Queen's University that inspires innovation and shapes the
@@ -64,7 +73,7 @@ export default function homepage() {
       {/* Core Values Section */}
       <section className="values">
         <div className="container-values">
-          <div className="values-content">
+          <div className="values-content" data-aos="fade-right">
           <h2 className="values-title">
             Core Values
           </h2>
@@ -147,7 +156,7 @@ export default function homepage() {
 
       {/* Upcoming Events Section */}
       <section className="events">
-        <div className="container-events">
+        <div className="container-events" data-aos="fade-up">
           <h2 className="events-title">
             Upcoming Events
           </h2>
