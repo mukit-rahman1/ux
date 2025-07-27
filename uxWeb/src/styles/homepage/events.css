@@ -201,7 +201,7 @@
   
     overflow: hidden;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
@@ -267,7 +267,7 @@
   }
 
   .event-description {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
 }
@@ -306,7 +306,7 @@
   }
 
   .event-description {
-    font-size: 9px;
+    font-size: 9px !important;
   }
   
 }
@@ -371,25 +371,25 @@
 
 @media (min-width: 1921px) {
   .events {
-    padding: 8rem 0;
+    padding: 8rem 0 !important;
   }
 
   .container-events {
-    max-width: 1600px;
+    max-width: 1600px !important;
   }
 
   .events-title {
-    font-size: 120px;
-    width: 1100px;
+    font-size: 120px !important;
+    width: 1100px !important;
   }
 
   .events-grid {
-    width: 200%;
-    gap: 8rem;
+    width: 200% !important;
+    gap: 8rem !important;
   }
 
   .event-card {
-    padding: 5rem;
+    padding: 5rem !important;
   }
 
   .event-content {
@@ -398,15 +398,15 @@
   }
 
   .event-title {
-    font-size: 42px;
+    font-size: 42px !important;
   }
 
   .event-description {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .events-btn {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   .event-image {
@@ -417,11 +417,11 @@
 
 @media (min-width: 2560px) {
   .events {
-    padding: 10rem 0;
+    padding: 10rem 0 !important;
   }
 
   .container-events {
-    max-width: 2000px;
+    max-width: 2000px !important;
   }
 
   .events-title {
@@ -430,21 +430,21 @@
   }
 
   .events-grid {
-    width: 200%;
-    gap: 10rem;
-    height: 600px;
+    width: 200% !important;
+    gap: 10rem !important;
+    height: 600px !important;
   }
 
   .event-card {
-    padding: 7rem;
+    padding: 7rem !important;
   }
 
   .event-title {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 
   .event-description {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .events-btn {

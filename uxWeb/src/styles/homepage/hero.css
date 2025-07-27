@@ -13,7 +13,7 @@
 
 .hero {
   position: relative;
-  top: 185px;
+  top: 0px;
   overflow: hidden;
 }
 
@@ -26,9 +26,11 @@
   font-size: 128px;
   font-weight: 600;
 
+  margin-left: 0;
+
   margin-bottom: 2rem;
   line-height: 1.1;
-
+  text-align: left;
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -143,7 +145,11 @@
 
 @media (max-width: 1024px) {
   .hero {
-    top: 150px;
+    top: 0px;
+  }
+
+  .hero-top {
+    height: 340px;
   }
 
   .hero-content {
@@ -153,7 +159,7 @@
   .hero-title {
     font-size: 72px;
     height: 160px;
-    width: 380px;
+    width: 300px;
   }
 
   .hero-subtitle {
@@ -171,7 +177,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    top: 120px;
+    top: 0px;
   }
 
   .hero-content {
@@ -196,7 +202,7 @@
   }
 
   .join-btn {
-    align-self: center;
+    align-self: flex-end;
     font-size: 18px;
     padding: 0.4rem 0.8rem;
   }

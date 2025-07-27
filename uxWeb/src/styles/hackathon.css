@@ -1,137 +1,10 @@
-/* Hero Section */
-.hero-section-hackathon {
-    padding: 12rem 0 0 0;
-}
-
-.container-hackathon{
-    max-width: 1150px;
-    margin-left: 14vw;
-    
-    position: relative;
-}
-  
-.hero-grid-hk {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    justify-content: space-between;
-}
-  
-.hero-content-hk {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
-}
-  
-.hero-title-hk {
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0px;
-    font-family: "BR Firma", sans-serif;
-
-
-    background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 65px;
-    width: 590px;
-    white-space: nowrap;  
-}
-  
-.hero-subtitle-hk {
-    color: #D53302;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "BR Firma", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0px;
-    margin-bottom: 1rem;
-}
-  
-.hero-btn-hk {
-    padding: 1rem 2rem;
-    border-radius: 9999px;
-    transition: background-color 0.5s ease-in-out;
-    align-self: flex-start;
-    font-weight:500;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-  
-
-  
-.hero-image-container-hk {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.hero-image-hk {
-    width: 100%;
-    max-width: 28rem;
-    height: auto;
-}
-  
-
+@import "./hackathon/hero.css";
+@import "./hackathon/content.css";
 
 /* Content Sections */
-.content-section-hk {
-    padding: 4rem 0;
-}
-  
-.section-title-hk {
-    color: #000000;
-    margin-top: 9rem;
-    margin-bottom: 1.5rem;
 
-    font-family: "BR Firma", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: left;
-    font-size: 32px;
-    font-weight: 600;
-}
-  
-.section-content-hk {
-    max-width: 64rem;
-}
-  
-.section-text-hk {
-    font-family: "BR Firma", sans-serif;
-    color: #00022B;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0px;
-    text-align: left;
-}
 
-  
-.sponsor-btn-hk {
-    padding: 1rem 2rem;
-    border-radius: 9999px;
-    transition: background 0.5s ease-in-out;
-    margin-top: 3rem;
-    margin-bottom: 15rem;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-  
-.sponsor-btn-hk:hover {
-    background: #00022B linear-gradient(to right, #A3280C, #657F95);
-}
+
 
 .hm_tr {
     position: absolute;
@@ -145,11 +18,4 @@
     top: 109%;
     left: 0%;
     transform: translateY(-50%);
-}
-
-.card img{
-    position: absolute;
-    bottom: 1.2%;
-    right: 1.8%;
-
 }
