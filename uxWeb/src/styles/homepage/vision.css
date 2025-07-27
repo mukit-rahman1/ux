@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "BR Firma";
+  src: url("../br-firma/BR Firma Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "BR Firma";
+  src: url("../br-firma/BR Firma SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+
+
+.vision {
+  padding: 5rem 0;
+  position: relative;
+  text-align: right;
+  top: 210px;
+}
+
+.vision-content {
+  width: 747px;
+  margin-left: auto;
+}
+
+
+.vision-title {
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+  text-align: right;
+
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 2rem;
+}
+
+.vision-text {
+  font-family: "BR Firma", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 2560px) {
+  .vision-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .vision-text {
+    font-size: 22px !important;
+  }
+
+  .vision-content {
+    width: 900px !important;
+  }
+}
+@media (max-width: 1440px) {
+  .vision-content {
+    width: 650px;
+  }
+
+  .vision-title {
+    font-size: 96px;
+  }
+
+  .vision-text {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vision {
+    top: 180px;
+    padding: 4rem 0;
+  }
+
+  .vision-content {
+    width: 550px;
+  }
+
+  .vision-title {
+    font-size: 72px;
+  }
+
+  .vision-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision {
+    top: 150px;
+    padding: 3rem 0;
+  }
+
+  .vision-content {
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .vision-title {
+    font-size: 56px;
+  }
+
+  .vision-text {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision {
+    top: 120px;
+    padding: 2.5rem 0;
+  }
+
+  .vision-content {
+    width: 95%;
+  }
+
+  .vision-title {
+    font-size: 42px;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-text {
+    font-size: 12px !important;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 375px) {
+  .vision {
+    top: 100px;
+    padding: 2rem 0;
+  }
+
+  .vision-title {
+    font-size: 36px;
+  }
+
+  .vision-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .vision {
+    top: 90px;
+    padding: 1.5rem 0;
+  }
+
+  .vision-title {
+    font-size: 32px;
+    margin-bottom: 0.6rem;
+  }
+
+  .vision-text {
+    font-size: 10px !important;
+  }
+}
+

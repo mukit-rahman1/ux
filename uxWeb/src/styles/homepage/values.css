@@ -1,0 +1,456 @@
+.values {
+  padding: 5rem 0;
+  position: relative;
+  text-align: left;
+  top: 360px;
+  height: 900px;
+  margin-bottom: 12rem;
+}
+
+.container-values {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0rem;
+  height: 750px;
+}
+.values-content {
+  width: 1225px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.values-title {
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+  text-align: left;
+  z-index: 1;
+
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.8rem;
+  margin-bottom: 3rem;
+  height: 65%;
+
+}
+
+.value-card {
+
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.value-description {
+  font-size: 16px;
+  font-family: "BR Firma", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: #00022b;
+  letter-spacing: 0px;
+  line-height: 120%;
+  max-width: 232px;
+
+  position: relative;
+  padding-top: 5.5rem;
+}
+
+.value-card.creativity {
+  position: relative;
+  background: white; 
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.value-card.creativity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; 
+  border-radius: 16px; 
+  background: linear-gradient(to right, #A3280C, #657F95);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.value-card.empathy {
+  position: relative;
+  background: white; /* card bg */
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.value-card.empathy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; /* border thickness */
+  border-radius: 16px; /* same as card */
+  background: linear-gradient(to right, #FCC560, #A0CBAD);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.value-card.curiosity {
+  position: relative;
+  background: white; /* card bg */
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.value-card.curiosity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; /* border thickness */
+  border-radius: 16px; /* same as card */
+  background: linear-gradient(to right, #A3280C, #657F95);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.value-card.inclusivity {
+  position: relative;
+  background: white; /* card bg */
+  border-radius: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.value-card.inclusivity::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 6px; /* border thickness */
+  border-radius: 16px; /* same as card */
+  background: linear-gradient(to right, #FCC560, #A0CBAD);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+.value-title {
+  padding-top: 0.6rem;
+  font-weight: 600;
+  font-size: 32px;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+  text-align: left;
+}
+
+.meet-team-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  background: #00022B;
+  margin-bottom: 2rem;
+
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.meet-team-btn:hover {
+  background: #00022B linear-gradient(to right, #A3280C, #657F95);
+}
+
+@media (min-width: 2500px) {
+  .values-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .values {
+    padding: 10rem 0;
+    height: 1200px;
+  }
+
+  .container-values {
+    max-width: 2000px;
+    height: 1000px;
+  }
+
+  .values-title {
+    font-size: 144px !important;
+    height: 125px !important;
+    width: 910px !important;
+  }
+
+  .values-grid {
+    gap: 6rem;
+  }
+
+  .value-title {
+    font-size: 48px;
+  }
+
+  .value-description {
+    font-size: 20px !important;
+    max-width: 400px;
+  }
+
+  .meet-team-btn {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .values-title {
+    font-size: 136px !important;
+    height: 115px !important;
+    width: 810px !important;
+  }
+
+
+  .container-values {
+    max-width: 1600px !important;
+    height: 800px !important;
+  }
+
+  .values-content {
+    width: 100% !important;
+  }
+
+  .values-grid {
+    gap: 4rem;
+  }
+  .value-title {
+    font-size: 42px;
+  }
+  .value-description {
+    font-size: 20px;
+    max-width: 300px;
+  }
+
+  .meet-team-btn {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .values {
+    padding: 6.5rem 0;
+    top: 250px;
+    height: 900px;
+  }
+
+  .container-values {
+    max-width: 1200px;
+    height: 750px;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .values-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .values-title {
+    font-size: 82px;
+    margin-bottom: 7rem;
+  }
+
+  .value-title {
+    font-size: 28px;
+  }
+
+  .meet-team-btn {
+    font-size: 22px;
+  }
+
+  .values-grid {
+    height: 65%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .values {
+    top: 360px;
+    height: 1500px;
+    margin-bottom: 2rem;
+  }
+
+  .container-values {
+    max-width: 900px;
+    height: 100%;
+  }
+
+  .values-title {
+    font-size: 72px;
+    margin-bottom: 4rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    height: 100%;
+  }
+
+  .value-title {
+    font-size: 36px;
+  }
+
+  .meet-team-btn {
+    font-size: 20px;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .values {
+    top: 240px;
+    padding: 3rem 0;
+    height: 1900px;
+  }
+
+  .container-values {
+    max-width: 90%;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .values-title {
+    font-size: 56px;
+    margin-bottom: 3rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+
+  .value-card {
+    padding: 1.2rem;
+    margin: 0 3rem 0 3rem;
+  }
+
+  .value-title {
+    font-size: 30px;
+  }
+
+  .meet-team-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .values {
+    top: 200px;
+    padding: 2rem 0;
+    height: 2100px;
+  }
+
+  .container-values {
+    max-width: 95%;
+  }
+
+  .values-title {
+    font-size: 42px;
+    margin-bottom: 2.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .value-card {
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 1rem;
+  }
+
+  .value-title {
+    font-size: 24px;
+  }
+
+  .meet-team-btn {
+    font-size: 16px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .values {
+    top: 180px;
+    height: 1800px;
+  }
+
+  .value-card {
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
+  }
+
+  .values-title {
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+
+  .value-title {
+    font-size: 24px;
+  }
+
+  .meet-team-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .values {
+    top: 160px;
+  }
+
+  .values-title {
+    font-size: 32px;
+  }
+
+  .value-title {
+    font-size: 14px;
+  }
+
+  .meet-team-btn {
+    font-size: 13px;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+
+

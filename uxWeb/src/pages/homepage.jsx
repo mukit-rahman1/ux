@@ -1,26 +1,42 @@
 import "../styles/header.css"
-import "../styles/homepage.css"
 import "../styles/footer.css"
-import EventCarousel from "../components/UpcomingEventCarousel"
+import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
-import LinkButton from "../components/LinkButton"
+import { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function homepage() {
+  const [showCreativityText, setShowCreativityText] = useState(false);
+  const [showEmpathyText, setShowEmpathyText] = useState(false);
+  const [showCuriosityText, setShowCuriosityText] = useState(false);
+  const [showInclusivityText, setShowInclusivityText] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
+
+
   return (
     <div>
       {/* Hero Section */}
       <section className="hero">
        
         {/* Hero Content */}
-        <div className="container">
-          <div className="hero-content">
+        <div className="container-homepage">
+          <div className="hero-content" data-aos="fade-right">
             <div className="hero-top">
               <h1 className="hero-title">
                 Queen's
                 <br />
                 UX Club
               </h1>
-              <LinkButton arrowStyle="up" className="join-btn">Join</LinkButton>
+              <div href="#" className="join-btn">
+                Join <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
+              </div>
             </div>
             <div className="hero-body">
               <div className="hero-text">
@@ -41,8 +57,8 @@ export default function homepage() {
         {/* vision stars */}
 
         {/* vision content */}
-        <div className="container">
-          <div className="vision-content">
+        <div className="container-homepage">
+          <div className="vision-content" data-aos="fade-left">
           <h2 className="vision-title">Vision</h2>
           <p className="vision-text">
             To be the leading student-driven community at Queen's University that inspires innovation and shapes the
@@ -57,55 +73,138 @@ export default function homepage() {
       {/* Core Values Section */}
       <section className="values">
         <div className="container-values">
-          <div className="values-content">
+          <div className="values-content" data-aos="fade-right">
           <h2 className="values-title">
             Core Values
           </h2>
 
           <div className="values-grid">
-            <div className="card value-card creativity">
-              <h3 className="value-title">Creativity</h3>
-              <img src="creativity.svg" alt="" />
+            <div className="card value-card creativity" onClick={() => setShowCreativityText(!showCreativityText)}>
+            <h3 className="value-title">Creativity</h3>
+             { showCreativityText ? (
+              <p className="value-description">
+              We believe great design begins with imagination. Whether we’re prototyping, 
+              brainstorming, or running a workshop, we encourage bold ideas and fresh thinking 
+              in everything we do.
+              </p>
+            ) : (
+              <>
+                <img src="creativity.svg" alt="" />
+              </>
+              )
+            }
             </div>
 
-            <div className="card value-card empathy">
+            <div className="card value-card empathy" onClick={() => setShowEmpathyText(!showEmpathyText)}>
 
               <h3 className="value-title">Empathy</h3>
+              { showEmpathyText ? (
+              <p className="value-description">
+              At the heart of UX is understanding people. We approach every project, 
+              conversation, and challenge with empathy, striving to design with, not just for, 
+              our users and peers.
+              </p>
+            ) : (
+              <>
               <img src="empathy.svg" alt="" />
+              </>
+            )
+            }
             </div>
 
-            <div className="card value-card curiosity">
+            <div className="card value-card curiosity" onClick={() => setShowCuriosityText(!showCuriosityText)}>
 
               <h3 className="value-title">Curiosity</h3>
+              { showCuriosityText ? (
+              <p className="value-description">
+              We’re driven by questions and the desire to keep learning. 
+              From exploring new tools to diving into complex design problems, 
+              we foster a culture of exploration and growth.
+              </p>
+            ) : (
+              <>
               <img src="curiosity.svg" alt="" />
+              </>
+            )
+            }
             </div>
 
-            <div className="card value-card inclusivity">
+            <div className="card value-card inclusivity" onClick={() => setShowInclusivityText(!showInclusivityText)}>
               
               <h3 className="value-title">Inclusivity</h3>
+              { showInclusivityText ? (
+              <p className="value-description">
+              We welcome students of all backgrounds, disciplines, and experience levels, 
+              creating a safe and supportive space where everyone’s voice matters. 
+              By embracing diverse perspectives, we design more thoughtful and accessible experiences.
+              </p>
+            ) : (
+              <>
               <img src="inclusivity.svg" alt="" />
+              </>
+            )
+            }
             </div>
           </div>
-          <LinkButton className="meet-team-btn" arrowStyle="up">Meet Our Team</LinkButton>
+          <a href="#" className="meet-team-btn">
+            Meet Our Team <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
+          </a>
           </div>
 
         </div>
       </section>
-      
+
       {/* Upcoming Events Section */}
       <section className="events">
-        <div className="container-events">
-          <h2 className="upcoming-events-title">
+        <div className="container-events" data-aos="fade-up">
+          <h2 className="events-title">
             Upcoming Events
           </h2>
 
-         <div className="container-carousel">
-            <EventCarousel cardNum={5} />
+          <div className="events-grid">
+            <div className="event-card">
+              <div className="event-content">
+                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
+                <p className="event-description">
+                Our first workshop introduced students to Figma, where they learned to design wireframes and 
+                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
+                </p>
+              </div>
+
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
+            </div>
+
+            <div className="event-card">
+
+              <div className="event-content">
+                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
+                <p className="event-description">
+                Our second workshop introduced students to Figma, where they learned to design wireframes and 
+                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
+                </p>
+              </div>
+              
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
+            </div>
+
+            <div className="event-card">
+              <div className="event-content">
+                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
+                <p className="event-description">
+                Our third workshop introduced students to Figma, where they learned to design wireframes and 
+                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
+                </p>
+              </div>
+
+              <img src="../Group 10.svg" className="event-image" alt="Event" />
+            </div>
           </div>
-          <LinkButton arrowStyle="up" className="events-btn" path="/events">See All Events</LinkButton>
+
+          <a href="#" className="events-btn">
+            See All Events <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
+          </a>
         </div>
       </section>
-
 
       {/* stars */}
       <div className="stars">

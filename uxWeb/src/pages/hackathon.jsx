@@ -1,12 +1,21 @@
 import "../styles/hackathon.css"
-import LinkButton from "../components/LinkButton"
+import { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function hackathon() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
+
   return (
     <div className="page-container-hackathon">
 
       {/* Hero Section */}
-      <section className="hero-section-hackathon">
+      <section className="hero-section-hackathon" data-aos="fade-right">
         <div className="container-hackathon">
           <div className="hero-grid-hk">
 
@@ -16,7 +25,8 @@ export default function hackathon() {
               </h1>
 
               <p className="hero-subtitle-hk">December 3rd-5th, 2025 | In Person | Kingston, ON</p>
-              <LinkButton className="hero-btn-hk" arrowStyle="right">Apply Now</LinkButton>
+
+              <button className="hero-btn-hk">Apply Now →</button>
             </div>
 
             <div className="hero-image-container-hk">
@@ -31,7 +41,7 @@ export default function hackathon() {
       </section>
 
       {/* The Place for All Designers Section */}
-      <section className="content-section-hackathon">
+      <section className="content-section-hackathon" data-aos="fade-left">
         <div className="container-hackathon">
           <div className="section-content-hk">
             <h2 className="section-title-hk">The Place for All Designers</h2>
@@ -54,7 +64,7 @@ export default function hackathon() {
       </section>
 
       {/* Sponsor Section */}
-      <section className="content-section-hackathon">
+      <section className="content-section-hackathon" data-aos="fade-up">
         <div className="container-hackathon">
           <div className="section-content-hk">
             <h2 className="section-title-hk">Sponsor the launch of design packed weekend</h2>
@@ -67,7 +77,8 @@ export default function hackathon() {
               define our Designathon experience.
               </p>
             </div>
-            <LinkButton className="sponsor-btn-hk" arrowStyle="right">Become a Sponsor</LinkButton>
+
+            <button className="sponsor-btn-hk">Become a Sponsor →</button>
           </div>
         </div> 
       </section>
