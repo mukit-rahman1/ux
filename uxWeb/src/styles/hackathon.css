@@ -49,6 +49,7 @@
   background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
   background-clip: border-box;
   -webkit-background-clip: text;
+  text-align: left;
   -webkit-text-fill-color: transparent;
   height: 65px;
   width: 590px;
