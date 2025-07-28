@@ -1,5 +1,4 @@
 export default function MiniNavbar({ options, setSelected, selected }) {
-    console.log(selected, "OKAY")
    
     return (
             <div className="mini-navbar ">

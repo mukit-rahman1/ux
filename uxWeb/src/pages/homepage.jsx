@@ -3,6 +3,8 @@ import "../styles/footer.css"
 import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
 import { useState, useEffect } from "react"
+import EventCarousel from "../components/UpcomingEventCarousel"
+import LinkButton from "../components/LinkButton"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -156,53 +158,15 @@ export default function homepage() {
 
       {/* Upcoming Events Section */}
       <section className="events">
-        <div className="container-events" data-aos="fade-up">
-          <h2 className="events-title">
+                <div className="container-events">
+          <h2 className="upcoming-events-title">
             Upcoming Events
           </h2>
 
-          <div className="events-grid">
-            <div className="event-card">
-              <div className="event-content">
-                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
-                <p className="event-description">
-                Our first workshop introduced students to Figma, where they learned to design wireframes and 
-                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
-                </p>
-              </div>
-
-              <img src="../Group 10.svg" className="event-image" alt="Event" />
-            </div>
-
-            <div className="event-card">
-
-              <div className="event-content">
-                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
-                <p className="event-description">
-                Our second workshop introduced students to Figma, where they learned to design wireframes and 
-                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
-                </p>
-              </div>
-              
-              <img src="../Group 10.svg" className="event-image" alt="Event" />
-            </div>
-
-            <div className="event-card">
-              <div className="event-content">
-                <h3 className="event-title"> <span className="event-title-colour">Workshops</span> <br />Intro to Figma</h3>
-                <p className="event-description">
-                Our third workshop introduced students to Figma, where they learned to design wireframes and 
-                prototypes from scratch. By the end, everyone had hands-on experience and a basic project to show off!
-                </p>
-              </div>
-
-              <img src="../Group 10.svg" className="event-image" alt="Event" />
-            </div>
+         <div className="container-carousel">
+            <EventCarousel cardNum={5} />
           </div>
-
-          <a href="#" className="events-btn">
-            See All Events <ArrowUpRight style={{ width: "1rem", height: "1rem", marginLeft: "0.25rem" }} />
-          </a>
+          <LinkButton arrowStyle="up" className="events-btn" path="/events">See All Events</LinkButton>
         </div>
       </section>
 
