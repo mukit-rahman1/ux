@@ -19,6 +19,7 @@
   
   .section-content-hk {
     max-width: 64rem;
+
   }
   
   .section-text-hk {
@@ -29,7 +30,8 @@
     line-height: 150%;
     letter-spacing: 0px;
     text-align: left;
-  }
+    }
+
 
   
   .sponsor-btn-hk {

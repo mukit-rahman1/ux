@@ -1,4 +1,4 @@
-@import "./homepage/hero.css";
+
 @import "./homepage/vision.css";
 @import "./homepage/values.css";
 @import "./homepage/events.css";
@@ -32,6 +32,8 @@
   font-size: large;
 }
 
+
+/* Global Styles */
 .container-homepage {
   max-width: 1220px;
   margin: 0 auto;
@@ -96,22 +98,168 @@ main {
     z-index: -1;
   }
 
+
+/* Hero Section */
+.hero {
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 757px;
+}
+
+.hero-title {
+  font-family: "BR Firma", sans-serif;
+  font-size: 128px;
+  font-weight: 600;
+
+  margin-left: 0;
+
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  text-align: left;
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  height: 262px;
+  width: 531px;
+
+}
+
+
+.hero-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  width: 100%;
+  height: 96px;
+}
+
+.hero-text {
+  flex: 1;
+  color: #000000;
+
+  font-family: "BR Firma", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  background: #00022B;
+  margin-bottom: 2rem;
+  
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.join-btn:hover {
+  background: #00022B linear-gradient(to right, #A3280C, #657F95);
+}
+
   @media (min-width: 2500px) {
+    /* Global Styles */
     .button-outline {
       font-size: 32px;
       padding: 20px 30px;
     }
+
+
+  /* Hero Section */
+  .hero-title {
+    font-size: 144px !important;
+    height: 300px !important;
+    width: 650px !important;
+  }
+
+  .hero-text {
+    font-size: 22px !important;
+  }
+
+  .hero-content {
+    width: 1000px !important;
+  }
+
+  .hero-body {
+    width: 100%;
+    height: 120px;
+  }
+  }
+
+  @media (min-width: 1921px) {
+    /* Hero Section */
+    .hero-title {
+      font-size: 136px;
+    }
+  
+    .hero-text {
+      font-size: 20px;
+    }
+    .hero-content {
+      width: 800px;
+    }
+
   }
 
   @media (max-width: 1440px) {
+<<<<<<< Updated upstream 
+=======
+    /* Global Styles */
+    .container-homepage {
+      max-width: 1040px;
+      padding: 0 2rem;
+    }
+
+    >>>>>>> Stashed changes
     .button-outline {
       font-size: 28px;
       padding: 15px 25px;
+    }
+
+    /* Hero Section */
+    .hero-content {
+      width: 650px;
+    }
+
+    .hero-title {
+      font-size: 96px;
+      height: 200px;
+     width: 450px;
+    }
+
+    .hero-text {
+    font-size: 16px;
     }
   }
   
   @media (max-width: 1024px) {
     .hm_tr {
+      /* Global Styles */
       position: absolute;
       top: 38%;
       right: 0%;
@@ -131,11 +279,57 @@ main {
       font-size: 24px;
       padding: 12px 20px;
     }
+<<<<<<< Updated upstream 
+=======
+
+    .container-homepage{
+      max-width: 768px;
+    }
+
+
+  /* Hero Section */
+  .hero {
+    top: 0px;
+  }
+
+  .hero-top {
+    height: 340px;
+  }
+
+  .hero-content {
+    width: 550px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    height: 160px;
+    width: 300px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .hero-body {
+    height: 80px;
+  }
+
+  .join-btn {
+    font-size: 20px;
+  }
+  >>>>>>> Stashed changes
   }
 
 
 
   @media (max-width: 768px) {
+    <<<<<<< Updated upstream 
+=======
+    /* Global Styles */
+    .container-homepage {
+      max-width: 480px;
+    }
+    >>>>>>> Stashed changes
     .nav-links {
       display: flex;
     }
@@ -156,10 +350,44 @@ main {
     .hm_tr, .hm_bl {
       width: 25%;
     }
+
+
+  /* Hero Section */
+  .hero {
+    top: 0px;
+  }
+
+  .hero-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    height: 120px;
+    width: 300px;
+  }
+
+  .hero-body {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    align-self: flex-end;
+    font-size: 18px;
+    padding: 0.4rem 0.8rem;
+  }
   }
   
 
   @media (max-width: 480px) {
+    /* Global Styles */
     .values-container {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -177,8 +405,35 @@ main {
     .hm_tr, .hm_bl {
       width: 20%;
     }
+
+  /* Hero Section */
+  .hero {
+    top: 100px;
+  }
+
+  .hero-content {
+    width: 95%;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    height: 90px;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .join-btn {
+    font-size: 16px;
+    padding: 0.3rem 0.7rem;
+  }
   }
   @media (max-width: 375px) {
+    /* Global Styles */
     .shapes-container {
       width: 95%;
     }
@@ -191,8 +446,30 @@ main {
     .hm_tr, .hm_bl {
       width: 18%;
     }
+
+  /* Hero Section */
+  .hero {
+    top: 90px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    height: 80px;
+    width: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text {
+    font-size: 12px;
+  }
+
+  .join-btn {
+    font-size: 14px;
+    padding: 0.3rem 0.6rem;
+  }
   }
   @media (max-width: 320px) {
+    /* Global Styles */
     .button-outline {
       font-size: 14px;
       padding: 6px 12px;
@@ -201,4 +478,28 @@ main {
     .hm_tr, .hm_bl {
       width: 15%;
     }
+
+  /* Hero Section */
+  .hero {
+    top: 80px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    height: 70px;
+    width: 200px;
+  }
+
+  .hero-body {
+    gap: 1rem;
+  }
+
+  .hero-text {
+    font-size: 10px;
+  }
+
+  .join-btn {
+    font-size: 13px;
+    padding: 0.25rem 0.5rem;
+  }
   }
