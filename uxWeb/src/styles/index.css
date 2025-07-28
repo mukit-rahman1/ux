@@ -29,6 +29,11 @@
 }
 
 
+body {
+  background-color: #FFFCF5;
+}
+
+
 h1 {
   font-family: "BR Firma", sans-serif;
   font-size: clamp(27px, 6vw, 64px);
