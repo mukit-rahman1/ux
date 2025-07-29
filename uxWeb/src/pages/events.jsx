@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/events.css"
 import MiniNavbar from "../components/MiniNavbar";
 import EventCard from "../components/EventCard";
-import UpcomingEventCarousel from "../components/UpcomingEventCarousel";
-import PrevEventCarousel from "../components/PrevEventCarousel";
+import UpcomingEventCarousel from "../components/EventCarouselSingle";
+import PrevEventCarousel from "../components/EventCarouselDouble";
+import MobileEventCarousel from "../components/EventCarouselMobile";
 
 
 export default function Events () {
     const [selected, setSelected] = useState("events")
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            if (typeof window !== "undefined") {
+                setIsMobile("ontouchstart" in window || navigator.maxTouchPoints > 0);
+            }
+        };
+        checkMobile();
+    }, []);
 
     const navOptions = [
         {label: "Events", value: "events"},
@@ -24,13 +35,22 @@ export default function Events () {
             <div>
                 <h2 className="event-category-title">Upcoming {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
-                    <UpcomingEventCarousel cardNum={7} />
+                    
+                    {isMobile ? (
+                        <MobileEventCarousel cardNum={5} />
+                    ) : (
+                        <UpcomingEventCarousel cardNum={7} />
+                    )}
                 </div>
             </div>
             <div className="mb-[244px]">
                 <h2 className="event-category-title">Previous {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
-                    <PrevEventCarousel cardNum={8} type="previous"/>
+                    {isMobile ? (
+                        <MobileEventCarousel cardNum={5} />
+                    ) : (
+                        <PrevEventCarousel cardNum={8} type="previous" />
+                    )}
                 </div>
             </div>
          

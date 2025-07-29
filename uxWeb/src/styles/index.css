@@ -120,4 +120,12 @@ a {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .red-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h2 {
+    font-size: 22px;
+  }
 }

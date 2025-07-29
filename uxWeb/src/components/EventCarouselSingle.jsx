@@ -21,6 +21,7 @@ export default function EventCarousel({ cardNum }) {
     if (!container) return;
 
     const updateCenterOffset = () => {
+      
       const index = 2;
       const containerWidth = container.offsetWidth;
       const centerOffset =

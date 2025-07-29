@@ -106,3 +106,8 @@
   color: #000000;
 }
 
+@media (max-width: 1000px) {
+  .event-category-title {
+    margin-left: 5%;
+  }
+}
