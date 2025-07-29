@@ -118,6 +118,13 @@ a {
   border-radius: 32px;
 }
 
+
+@media (min-width: 2600px) {
+  h1 {
+    font-size: 88px;
+  }
+}
+
 @media (max-width: 1000px) {
   .mini-navbar-option {
     padding-left: 6px;

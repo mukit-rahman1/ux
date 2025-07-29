@@ -1,7 +1,7 @@
 import "../styles/team.css";
 import MiniNavbar from "../components/MiniNavbar";
 import MemberCard from "../components/MemberCard";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 
 function Team() {
     const [selected, setSelected] = useState("cofounders");
@@ -57,6 +57,8 @@ function Team() {
 
     }
     
+    const director = teamData[selected].find((member) => member.role === "Director");
+
     return (
         <div className="min-h-[1330px]"> 
             <div className="mb-[33px]">
@@ -65,16 +67,9 @@ function Team() {
             </div>
             <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
             <div className="mt-[33px] flex flex-col items-center gap-[66.93px]">
-                {(() => {
-                    console.log("yes", selected)
-                    console.log("yes", teamData[selected])
-                    const director = teamData[selected].find((member) => member.role === "Director");
-                    return director ? (
-                        <MemberCard name={director.name} role={director.role}/>
-                    ) : null;
-                })()}
+                {director && <MemberCard name={director.name} role={director.role}/>}
 
-                <div className={`executive-row ${teamData[selected].length == 4 ? "w-[50%]" : "w-[65%]"}`}>
+                <div className={`executive-row ${teamData[selected].length == 4 ? "w-[50%]" : "w-[65%]"} ${!director ? "mt-[5%]" : ""}`}>
                     {teamData[selected].map((member, index) => (
                         member.role != "Director" && <MemberCard name={member.name} role={member.role}/>            
                     ))}

@@ -113,3 +113,9 @@
     margin-left: 5%;
   }
 }
+
+@media (min-width: 2700px) {
+  .event-category-title {
+    margin-left: 20%;
+  }
+}

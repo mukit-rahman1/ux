@@ -12,12 +12,16 @@ export default function Events () {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const checkMobile = () => {
-            if (typeof window !== "undefined") {
-                setIsMobile("ontouchstart" in window || navigator.maxTouchPoints > 0);
-            }
-        };
-        checkMobile();
+    const checkMobile = () => {
+        if (typeof window !== "undefined") {
+        const width = window.innerWidth;
+        setIsMobile(width <= 1000); // Adjust as needed for your breakpoint
+        }
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
     }, []);
 
     const navOptions = [
@@ -28,7 +32,7 @@ export default function Events () {
     return (
         <div className="min-h-[1330px]" id="hero">
             <div className="mb-[33px]">
-                <h1 className="">Events and Workshops</h1>
+                <h1 >Events and Workshops</h1>
                 <p className="red-text">Explore opportunities to learn UX research and design</p>
             </div>
             <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected}/>
