@@ -220,8 +220,31 @@ main {
   letter-spacing: 0px;
 }
 
+/* Events Section */
+.upcoming-events-title {
+  font-size: 96px;
+  font-weight: 600;
+  font-family: "BR Firma", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0px;
 
+  background: linear-gradient(to right, #8FB1BE, #00022B, #D53302);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 100px;
+  width: 900px;
 
+}
+.events-btn-homepage {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.upcoming-events-title-container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
 
 
   @media (min-width: 2500px) {
@@ -245,6 +268,7 @@ main {
 
   .hero-content {
     width: 1000px !important;
+    height: 620px !important;
   }
 
   .hero-body {
@@ -256,11 +280,12 @@ main {
     .vision-title {
       font-size: 144px !important;
       height: 125px !important;
-      width: 910px !important;
+      width: 900px !important;
     }
   
     .vision-text {
       font-size: 22px !important;
+      width: 900px !important;
     }
   
     .vision-content {
@@ -268,7 +293,14 @@ main {
     }
 
 
-
+    /* Events Section */
+    .upcoming-events-title-container {
+      max-width: 1800px !important;
+      padding: 0 0rem;
+    }
+    .upcoming-events-title {
+      font-size: 144px;
+    }
   }
 
   @media (min-width: 1921px) {
@@ -279,11 +311,35 @@ main {
   
     .hero-text {
       font-size: 20px;
+      
     }
     .hero-content {
       width: 800px;
+      height: 570px;
     }
-    
+
+    /* Vision Section */
+    .vision-title {
+      text-align: right;
+      padding-right: 0px;
+      font-size: 136px;
+      width: 800px;
+    }
+    .vision-text {
+      font-size: 20px;
+      width: 800px;
+    }
+
+    /* Events Section */
+    .upcoming-events-title-container {
+      max-width: 1700px;
+      padding: 0 0rem;
+    }
+    .upcoming-events-title {
+      font-size: 144px;
+      width: 1400px;
+      height: 160px;
+    }
    
   }
 
@@ -324,6 +380,15 @@ main {
 
   .vision-text {
     font-size: 16px !important;
+  }
+
+  /* Events Section */
+  .upcoming-events-title-container {
+    max-width: 1040px;
+    padding: 0 2rem;
+  }
+  .upcoming-events-title {
+    font-size: 96px;
   }
 
     
@@ -406,7 +471,14 @@ main {
     font-size: 15px;
   }
 
- 
+  /* Events Section */
+  .upcoming-events-title-container {
+    max-width: 768px;
+  }
+  .upcoming-events-title {
+    font-size: 72px;
+  }
+
 
   }
 
@@ -492,7 +564,15 @@ main {
   }
 
   /* Events Section */
-  
+  .upcoming-events-title-container {
+    max-width: 480px;
+    height: 70px;
+  }
+  .upcoming-events-title {
+    font-size: 52px;
+    white-space: normal;
+  }
+
   }
   
 
@@ -562,6 +642,15 @@ main {
     line-height: 120%;
   }
 
+  /* Events Section */
+  .upcoming-events-title-container {
+    max-width: 375px;
+    padding: 0 0rem;
+  }
+  .upcoming-events-title {
+    font-size: 42px;
+  }
+
     
   }
   @media (max-width: 375px) {
@@ -614,6 +703,15 @@ main {
     font-size: 12px;
   }
 
+  /* Events Section */
+  .upcoming-events-title-container {
+    max-width: 320px;
+    padding: 0 0rem;
+  }
+  .upcoming-events-title {
+    font-size: 36px;
+  }
+
    
   }
   @media (max-width: 320px) {
@@ -664,6 +762,17 @@ main {
 
   .vision-text {
     font-size: 10px !important;
+  }
+
+  /* Events Section */
+  .upcoming-events-title-container {
+    max-width: 280px;
+    padding: 0 0rem;
+    text-wrap: wrap;
+  }
+  .upcoming-events-title {
+    font-size: 28px;
+    white-space: normal;
   }
 
     

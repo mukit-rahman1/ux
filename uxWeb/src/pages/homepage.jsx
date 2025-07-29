@@ -159,14 +159,16 @@ export default function homepage() {
       {/* Upcoming Events Section */}
       <section className="events">
         <div className="container-events">
+          <div className="upcoming-events-title-container">
           <h2 className="upcoming-events-title">
             Upcoming Events
           </h2>
+          </div>
 
          <div className="flex items-center justify-center mt-[59px]">
             <EventCarousel cardNum={5} />
           </div>
-          <LinkButton arrowStyle="up" className="events-btn" path="/events">See All Events</LinkButton>
+          <LinkButton arrowStyle="up" className="events-btn-homepage" path="/events">See All Events</LinkButton>
         </div>
       </section>
 
