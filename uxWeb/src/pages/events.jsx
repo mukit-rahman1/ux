@@ -5,6 +5,8 @@ import EventCard from "../components/EventCard";
 import UpcomingEventCarousel from "../components/EventCarouselSingle";
 import PrevEventCarousel from "../components/EventCarouselDouble";
 import MobileEventCarousel from "../components/EventCarouselMobile";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 
 export default function Events () {
@@ -12,16 +14,21 @@ export default function Events () {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-    const checkMobile = () => {
-        if (typeof window !== "undefined") {
-        const width = window.innerWidth;
-        setIsMobile(width <= 1000); // Adjust as needed for your breakpoint
-        }
-    };
+        AOS.init({
+          duration: 1000,
+          once: true,
+        })
 
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+        const checkMobile = () => {
+            if (typeof window !== "undefined") {
+            const width = window.innerWidth;
+            setIsMobile(width <= 1000); 
+            }
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
     }, []);
 
     const navOptions = [
@@ -30,13 +37,14 @@ export default function Events () {
     ];
 
     return (
-        <div className="min-h-[1330px]" id="hero">
-            <div className="mb-[33px]">
-                <h1 >Events and Workshops</h1>
+        <div className="min-h-[1330px] overflow-x-hidden" id="hero"  >
+            <section className="mb-[33px]" data-aos="fade-right">
+                <h1>Events and Workshops</h1>
                 <p className="red-text">Explore opportunities to learn UX research and design</p>
-            </div>
-            <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected}/>
-            <div>
+                <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected}/>
+            </section>
+            
+            <section data-aos="fade-left">
                 <h2 className="event-category-title">Upcoming {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
                     
@@ -46,8 +54,8 @@ export default function Events () {
                         <UpcomingEventCarousel cardNum={7} />
                     )}
                 </div>
-            </div>
-            <div className="mb-[244px]">
+            </section>
+            <section className="mb-[244px]" data-aos="fade-up">
                 <h2 className="event-category-title">Previous {selected[0].toUpperCase() + selected.slice(1)}</h2>
                 <div className="flex items-center justify-center mt-[59px]">
                     {isMobile ? (
@@ -56,7 +64,7 @@ export default function Events () {
                         <PrevEventCarousel cardNum={8} type="previous" />
                     )}
                 </div>
-            </div>
+            </section>
          
 
         </div> 

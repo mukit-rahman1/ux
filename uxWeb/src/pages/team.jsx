@@ -2,9 +2,20 @@ import "../styles/team.css";
 import MiniNavbar from "../components/MiniNavbar";
 import MemberCard from "../components/MemberCard";
 import { useState, useEffect} from "react";
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 
 function Team() {
     const [selected, setSelected] = useState("cofounders");
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        })
+    }, [])
+
     const navOptions = [
         {label: "Co-Founders", value: "cofounders"},
         {label: "Sponsorships", value: "sponsorships"},
@@ -61,12 +72,12 @@ function Team() {
 
     return (
         <div className="min-h-[1330px]"> 
-            <div className="mb-[33px]">
+            <section className="mb-[33px]" data-aos="fade-right">
                 <h1 className="">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>
-            </div>
-            <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
-            <div className="mt-[33px] flex flex-col items-center gap-[66.93px]">
+                <MiniNavbar options={navOptions} selected={selected} setSelected={setSelected} width="750px"/>
+            </section>
+            <section className="mt-[33px] flex flex-col items-center gap-[66.93px]" data-aos="fade-up">
                 {director && <MemberCard name={director.name} role={director.role}/>}
 
                 <div className={`executive-row ${teamData[selected].length == 4 ? "w-[50%]" : "w-[65%]"} ${!director ? "mt-[5%]" : ""}`}>
@@ -75,7 +86,7 @@ function Team() {
                     ))}
                 </div>
 
-            </div>
+            </section>
         </div>
     )
 }
