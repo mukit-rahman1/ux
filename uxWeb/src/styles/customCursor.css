@@ -1,0 +1,17 @@
+html, body {
+    cursor: none; /* hide default cursor */
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    pointer-events: none; /* so it doesn't block clicks */
+    z-index: 9999;
+    transform: translate(-2px, -2px); /* offset to align tip */
+  }
+  
+  .custom-cursor img {
+    width: 20px; /* shrink your SVG */
+    height: auto;
+    display: block;
+  }
+  

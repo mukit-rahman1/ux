@@ -2,6 +2,7 @@ import "../styles/hackathon.css"
 import { useState, useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import CustomCursor from "../components/customCursor"
 
 export default function hackathon() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function hackathon() {
 
   return (
     <div className="page-container-hackathon">
+          <CustomCursor />
 
       {/* Hero Section */}
       <section className="hero-section-hackathon" data-aos="fade-right">

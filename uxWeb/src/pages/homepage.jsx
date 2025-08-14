@@ -8,6 +8,7 @@ import MobileEventCarousel from "../components/EventCarouselMobile"
 import LinkButton from "../components/LinkButton"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import CustomCursor from "../components/customCursor"
 
 export default function homepage() {
   const [showCreativityText, setShowCreativityText] = useState(false);
@@ -38,6 +39,7 @@ export default function homepage() {
 
   return (
     <div>
+      <CustomCursor />
       {/* Hero Section */}
       <section className="hero">
        

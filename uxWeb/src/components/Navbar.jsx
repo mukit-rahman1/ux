@@ -4,7 +4,9 @@ export default function Navbar() {
     return (
         <div className="navbar-home">
             <div className="logo">
-                <img src="../Logo.svg" alt="UX" className="ux-logo"/>
+                <a href="/" className="logo">
+                    <img src="../Logo.svg" alt="UX" className="ux-logo"/>
+                </a>
             </div>
             <div className="nav-links">
                 <a href="/team">Our Team</a>
