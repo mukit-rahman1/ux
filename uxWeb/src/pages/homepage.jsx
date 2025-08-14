@@ -4,6 +4,7 @@ import "../styles/homepage.css"
 import { ArrowUpRight, Mail, Instagram, Linkedin } from "lucide-react"
 import { useState, useEffect } from "react"
 import EventCarousel from "../components/EventCarouselSingle"
+import MobileEventCarousel from "../components/EventCarouselMobile"
 import LinkButton from "../components/LinkButton"
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -13,13 +14,26 @@ export default function homepage() {
   const [showEmpathyText, setShowEmpathyText] = useState(false);
   const [showCuriosityText, setShowCuriosityText] = useState(false);
   const [showInclusivityText, setShowInclusivityText] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    })
-  }, [])
+      AOS.init({
+        duration: 1000,
+        once: true,
+      })
+      
+
+      const checkMobile = () => {
+          if (typeof window !== "undefined") {
+          const width = window.innerWidth;
+          setIsMobile(width <= 1024); 
+          }
+      };
+
+      checkMobile();
+      window.addEventListener("resize", checkMobile);
+      return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
 
   return (
@@ -158,15 +172,17 @@ export default function homepage() {
 
       {/* Upcoming Events Section */}
       <section className="events">
-        <div className="container-events">
+        <div className="container-events justify-center overflow-x-visible">
           <div className="upcoming-events-title-container">
           <h2 className="upcoming-events-title">
             Upcoming Events
           </h2>
           </div>
 
-         <div className="flex items-center justify-center mt-[59px]">
-            <EventCarousel cardNum={5} />
+          <div className="events-carousel-wrapper-homepage">
+            <div className="events-carousel-hmpg-inner">
+            {isMobile ? <MobileEventCarousel cardNum={5} /> : <EventCarousel cardNum={5} />}
+            </div>
           </div>
           <LinkButton arrowStyle="up" className="events-btn-homepage" path="/events">See All Events</LinkButton>
         </div>

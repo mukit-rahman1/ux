@@ -395,6 +395,11 @@ main {
   }
   
   @media (max-width: 1024px) {
+
+    .event-category-title {
+      margin-left: 5%;
+    }
+
     .hm_tr {
       /* Global Styles */
       position: absolute;
@@ -479,8 +484,26 @@ main {
     font-size: 72px;
   }
 
-
+  .events-carousel-wrapper-homepage {
+    width: 100vw; /* lock to viewport */
+    overflow: hidden; /* hide offscreen parts */
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
+
+  .events-carousel-wrapper-homepage > div {
+    display: flex;
+    gap: 1rem; /* space between cards */
+    transform: translateX(calc(-300px - 0.5rem)); 
+    /* Explanation:
+       -300px moves 1 full card width left (hide card 1 completely)
+       -0.5rem extra so card 2 peeks from left */
+    transition: transform 0.3s ease; /* optional */
+  }
+  
+
+}
 
 
 
