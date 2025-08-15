@@ -114,9 +114,10 @@ a {
   padding-top: 4px;
   padding-bottom: 4px;
   
- 
+  font-size: 18px;
   
   border-radius: 32px;
+  font-family: "BR Firma", sans-serif;
 }
 
 
@@ -128,6 +129,14 @@ a {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+  .mini-navbar-option {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 24px;
+  }
+
 }
 
 @media (max-width: 1000px) {
@@ -136,7 +145,12 @@ a {
     padding-right: 6px;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 8px;
   }
+
+
+
+
 
   .red-text {
     padding-left: 10%;
