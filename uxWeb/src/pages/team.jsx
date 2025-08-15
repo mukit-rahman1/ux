@@ -1,9 +1,10 @@
-import "../styles/team.css";
-import MiniNavbar from "../components/MiniNavbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 import MemberCard from "../components/MemberCard";
-import { useState, useEffect} from "react";
-import AOS from "aos"
-import "aos/dist/aos.css"
+import MiniNavbar from "../components/MiniNavbar";
+import CustomCursor from "../components/customCursor";
+import "../styles/team.css";
 
 
 function Team() {
@@ -72,6 +73,7 @@ function Team() {
 
     return (
         <div className="min-h-[1330px]"> 
+        <CustomCursor />
             <section className="mb-[33px]" data-aos="fade-right">
                 <h1 className="">Our Team</h1>
                 <p className="red-text">Meet the amazing people behind QUX</p>

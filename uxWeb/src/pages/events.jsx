@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
-import "../styles/events.css"
-import MiniNavbar from "../components/MiniNavbar";
-import EventCard from "../components/EventCard";
-import UpcomingEventCarousel from "../components/EventCarouselSingle";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 import PrevEventCarousel from "../components/EventCarouselDouble";
 import MobileEventCarousel from "../components/EventCarouselMobile";
-import AOS from "aos"
-import "aos/dist/aos.css"
+import UpcomingEventCarousel from "../components/EventCarouselSingle";
+import MiniNavbar from "../components/MiniNavbar";
+import CustomCursor from "../components/customCursor";
+import "../styles/events.css";
 
 
 export default function Events () {
@@ -38,6 +38,7 @@ export default function Events () {
 
     return (
         <div className="min-h-[1330px] overflow-x-hidden" id="hero"  >
+            <CustomCursor />
             <section className="mb-[33px]" data-aos="fade-right">
                 <h1>Events and Workshops</h1>
                 <p className="red-text">Explore opportunities to learn UX research and design</p>
