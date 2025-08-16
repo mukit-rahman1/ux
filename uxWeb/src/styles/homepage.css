@@ -307,6 +307,7 @@ main {
     /* Hero Section */
     .hero-title {
       font-size: 136px;
+      height: 300px;
     }
   
     .hero-text {
@@ -315,7 +316,7 @@ main {
     }
     .hero-content {
       width: 800px;
-      height: 570px;
+      height: 610px;
     }
 
     /* Vision Section */
@@ -324,6 +325,7 @@ main {
       padding-right: 0px;
       font-size: 136px;
       width: 800px;
+      height: 140px;
     }
     .vision-text {
       font-size: 20px;
@@ -339,6 +341,9 @@ main {
       font-size: 144px;
       width: 1400px;
       height: 160px;
+    }
+    .events-carousel-wrapper-homepage{
+      margin-top: 50px;
     }
    
   }
