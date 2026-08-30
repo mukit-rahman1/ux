@@ -7,10 +7,13 @@ a:hover {
 }
 /* hide custom cursor and use default for mobile*/
 @media (max-width: 768px) {
-  html, body {
-    cursor: auto; 
+  html, body, input, textarea {
+    cursor: auto !important;
   }
-  
+  button, a {
+    cursor: pointer !important;
+  }
+
   .custom-cursor {
     display: none;
   }

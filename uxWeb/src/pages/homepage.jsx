@@ -239,11 +239,11 @@ export default function homepage() {
               </p>
             </div>
           </div>
-          <Link to="/events">
-            <a className="btn">
+          <div className="flex justify-center mt-8">
+            <Link to="/events" className="btn">
               See All Events
-            </a>
-          </Link>
+            </Link>
+          </div>
         </div>
       </section>
 

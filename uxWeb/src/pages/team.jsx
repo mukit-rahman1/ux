@@ -53,10 +53,10 @@ function Team() {
     const navOptions = [
         {label: "Co-Chairs", value: "cochairs"},
         {label: "Website", value: "website"},
-        {label: "Sponsorships", value: "sponsorships"},
+        {label: "Finance", value: "sponsorships"},
         {label: "Marketing", value: "marketing"},
         {label: "Events", value: "events"},
-        {label: "Hackathon", value: "hackathon"}, 
+        {label: "Designathon", value: "hackathon"},
         {label: "Founders", value: "cofounders"},
         
     ];

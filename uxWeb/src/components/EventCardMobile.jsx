@@ -1,9 +1,9 @@
 import "../styles/events.css"
 import { useState } from "react"
+import EventImageGallery from "./EventImageGallery"
 
 export default function EventCard ({ eventData }) {
     const [isExpanded, setIsExpanded] = useState(false)
-    const eventImage = eventData?.imageGallery?.[0]
 
     const isPastEvent = new Date(eventData?.date) < new Date()
     const eventDescription = isPastEvent
@@ -26,10 +26,8 @@ export default function EventCard ({ eventData }) {
     return (
         <div className={`event-card w-[300px] h-[450px]`}>
             <div className="flex flex-col h-full">
-                {eventImage && (
-                    <img src={`../${eventImage}`} className="event-image-mobile" alt="Event" draggable={false} />
-                )}
-                <h3 className="event-title !text-[20px] mt-4"> 
+                <EventImageGallery images={eventData?.imageGallery} frameClassName="event-image-frame-mobile event-image-frame--center-h" />
+                <h3 className="event-title !text-[20px] mt-4">
                     <span className="event-title-colour">{eventData?.title}</span> <br />
                     {eventData?.subtitle}
                 </h3>
