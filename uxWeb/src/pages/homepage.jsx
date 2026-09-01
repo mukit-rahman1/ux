@@ -128,77 +128,77 @@ export default function homepage() {
           <div className="values-grid">
           <div className={`value-card-inner ${showCreativityText ? "flipped" : ""}`}>
             <div className="card value-card creativity" onClick={() => setShowCreativityText(v => !v)}>
-            
-            <h3 className="value-title">Creativity</h3>
-             { showCreativityText ? (
-              <p className="value-description">
-              We believe great design begins with imagination. Whether we’re prototyping, 
-              brainstorming, or running a workshop, we encourage bold ideas and fresh thinking 
-              in everything we do.
-              </p>
-            ) : (
-              <>
-                <img src="creativity.svg" alt="" />
-              </>
-              )
-            }
+              <div className="card-flipper">
+                <div className="card-front">
+                  <h3 className="value-title">Creativity</h3>
+                  <img src="creativity.svg" alt="" />
+                </div>
+                <div className="card-back">
+                  <h3 className="value-title">Creativity</h3>
+                  <p className="value-description">
+                  We believe great design begins with imagination. Whether we’re prototyping,
+                  brainstorming, or running a workshop, we encourage bold ideas and fresh thinking
+                  in everything we do.
+                  </p>
+                </div>
+              </div>
             </div>
             </div>
 
-            <div className="value-card-inner">
-            <div className="card value-card empathy" onClick={() => setShowEmpathyText(!showEmpathyText)}>
-
-              <h3 className="value-title">Empathy</h3>
-              { showEmpathyText ? (
-              <p className="value-description">
-              At the heart of UX is understanding people. We approach every project, 
-              conversation, and challenge with empathy, striving to design with, not just for, 
-              our users and peers.
-              </p>
-            ) : (
-              <>
-              <img src="empathy.svg" alt="" />
-              </>
-            )
-            }
+            <div className={`value-card-inner ${showEmpathyText ? "flipped" : ""}`}>
+            <div className="card value-card empathy" onClick={() => setShowEmpathyText(v => !v)}>
+              <div className="card-flipper">
+                <div className="card-front">
+                  <h3 className="value-title">Empathy</h3>
+                  <img src="empathy.svg" alt="" />
+                </div>
+                <div className="card-back">
+                  <h3 className="value-title">Empathy</h3>
+                  <p className="value-description">
+                  At the heart of UX is understanding people. We approach every project,
+                  conversation, and challenge with empathy, striving to design with, not just for,
+                  our users and peers.
+                  </p>
+                </div>
+              </div>
             </div>
             </div>
 
-            <div className="value-card-inner">
-            <div className="card value-card curiosity" onClick={() => setShowCuriosityText(!showCuriosityText)}>
-
-              <h3 className="value-title">Curiosity</h3>
-              { showCuriosityText ? (
-              <p className="value-description">
-              We’re driven by questions and the desire to keep learning. 
-              From exploring new tools to diving into complex design problems, 
-              we foster a culture of exploration and growth.
-              </p>
-            ) : (
-              <>
-              <img src="curiosity.svg" alt="" />
-              </>
-            )
-            }
+            <div className={`value-card-inner ${showCuriosityText ? "flipped" : ""}`}>
+            <div className="card value-card curiosity" onClick={() => setShowCuriosityText(v => !v)}>
+              <div className="card-flipper">
+                <div className="card-front">
+                  <h3 className="value-title">Curiosity</h3>
+                  <img src="curiosity.svg" alt="" />
+                </div>
+                <div className="card-back">
+                  <h3 className="value-title">Curiosity</h3>
+                  <p className="value-description">
+                  We’re driven by questions and the desire to keep learning.
+                  From exploring new tools to diving into complex design problems,
+                  we foster a culture of exploration and growth.
+                  </p>
+                </div>
+              </div>
             </div>
             </div>
 
-            <div className="value-card-inner">
-            <div className="card value-card inclusivity" onClick={() => setShowInclusivityText(!showInclusivityText)}>
-              
-              <h3 className="value-title">Inclusivity</h3>
-              { showInclusivityText ? (
-              <p className="value-description">
-              We welcome students of all backgrounds, disciplines, and experience levels, 
-              creating a safe and supportive space where everyone’s voice matters. 
-              By embracing diverse perspectives, we design more thoughtful and accessible experiences.
-              </p>
-            ) : (
-              <>
-              <img src="inclusivity.svg" alt="" />
-              </>
-            )
-            }
+            <div className={`value-card-inner ${showInclusivityText ? "flipped" : ""}`}>
+            <div className="card value-card inclusivity" onClick={() => setShowInclusivityText(v => !v)}>
+              <div className="card-flipper">
+                <div className="card-front">
+                  <h3 className="value-title">Inclusivity</h3>
+                  <img src="inclusivity.svg" alt="" />
+                </div>
+                <div className="card-back">
+                  <h3 className="value-title">Inclusivity</h3>
+                  <p className="value-description">
+                  We welcome students of all backgrounds, disciplines, and experience levels,
+                  creating a safe and supportive space where everyone’s voice matters.
+                  By embracing diverse perspectives, we design more thoughtful and accessible experiences.
+                  </p>
+                </div>
+              </div>
             </div>
             </div>
           </div>
