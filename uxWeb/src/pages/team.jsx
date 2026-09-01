@@ -53,27 +53,26 @@ function Team() {
     const navOptions = [
         {label: "Co-Chairs", value: "cochairs"},
         {label: "Website", value: "website"},
-        {label: "Sponsorships", value: "sponsorships"},
+        {label: "Finance", value: "finance"},
         {label: "Marketing", value: "marketing"},
         {label: "Events", value: "events"},
-        {label: "Hackathon", value: "hackathon"}, 
-        {label: "Founders", value: "cofounders"},
-        
+        {label: "Designathon", value: "designathon"},
+        {label: "Founders", value: "founders"}
     ];
 
     const teamData = {
-        cofounders: [
-            {name: "Renee Kim", role: "", image: "./headshots/cofounders/Renee.jpg"},
-            {name: "Amanda Zhu", role: "", image: "/headshots/cofounders/IMG_8919.JPG"},
-            {name: "Amanda Li", role: "", image: "/headshots/cofounders/Amanda.jpg"},
-            {name: "Noah Yu", role: "", image: "/headshots/cofounders/Noah.jpg"}
-        ],
         cochairs: [
             {name: "Phoebe Chan", role: "", image: "/headshots/cochairs/Phoebe_Chan.jpg"},
             {name: "Shillisa Chapagain", role: "", image: "/headshots/cochairs/Shillisa_Chapagain.jpg"},
             {name: "Tracy Chan", role: "", image: "/headshots/cochairs/Tracy_Chan.jpg"},
         ],
-        sponsorships: [
+        website: [
+            {name: "Augustine Osezua", role: "Director", image: "/headshots/website/Augustine_Osezua.jpeg"},
+            {name: "Aryaman Bhatia", role: "Executive", image: "/headshots/website/Aryaman_Bhatia.JPG"},
+            {name: "Ivan Fang", role: "Executive", image: "/headshots/website/Ivan_Fang.jpg"},
+            {name: "Mariana Gonzalez", role: "Executive", image: "/headshots/website/Mariana_Gonzalez.jpeg"}
+        ],
+        finance: [
             {name: "Basma Azeem", role: "Director", image: "/headshots/sponsorship/Basma_Azeem.jpg"},
 
         ],
@@ -91,18 +90,18 @@ function Team() {
             {name: "Sydney Robinson", role: "Executive", image: "/headshots/events/Sydney_Robinson.jpeg"},
             {name: "Nilaya Rimal", role: "Executive", image: "/headshots/events/Nilaya_Rimal.jpeg"},
         ],
-        hackathon: [
+        designathon: [
             {name: "Rounika Saxena", role: "Director", image: "/headshots/hackathon/rounika_saxena.jpeg"},
             {name: "Darryl Brown", role: "Executive", image: "/headshots/hackathon/Darryl_Brown.jpeg"},
             {name: "Gopika Batra", role: "Executive", image: "/headshots/hackathon/Gopika_Batra.jpeg"},
             {name: "Henrique Sponchiado", role: "Executive", image: "/headshots/hackathon/Henrique_Silverio_Sponchiado.jpg"},
             {name: "Kayla Burzese", role: "Executive", image: "/headshots/hackathon/Kayla_Burzese.PNG"}
         ],
-        website: [
-            {name: "Augustine Osezua", role: "Director", image: "/headshots/website/Augustine_Osezua.jpeg"},
-            {name: "Aryaman Bhatia", role: "Executive", image: "/headshots/website/Aryaman_Bhatia.JPG"},
-            {name: "Ivan Fang", role: "Executive", image: "/headshots/website/Ivan_Fang.jpg"},
-            {name: "Mariana Gonzalez", role: "Executive", image: "/headshots/website/Mariana_Gonzalez.jpeg"}
+        founders: [
+            {name: "Renee Kim", role: "", image: "./headshots/cofounders/Renee.jpg"},
+            {name: "Amanda Zhu", role: "", image: "/headshots/cofounders/IMG_8919.JPG"},
+            {name: "Amanda Li", role: "", image: "/headshots/cofounders/Amanda.jpg"},
+            {name: "Noah Yu", role: "", image: "/headshots/cofounders/Noah.jpg"}
         ]
 
 

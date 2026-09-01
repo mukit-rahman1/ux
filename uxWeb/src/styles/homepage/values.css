@@ -61,18 +61,15 @@
 
 /*main value card class*/
 .value-card {
-  transform-style: preserve-3d;          /* already present, keep it */
-  -webkit-transform-style: preserve-3d;  /* add prefix */
-  transition: transform 0.7s cubic-bezier(.2,.8,.2,1);
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
   background: transparent;
+  perspective: 1000px;
 
-  position: relative; 
+  position: relative;
   height: 100%;
   width: 100%;
-  padding: 1.5rem;
 }
 
 /*card contents both front and back*/
@@ -83,30 +80,33 @@
   transition: transform 0.7s ease;
   transform-style: preserve-3d;
 }
+
+/*inner wrapper that actually flips, kept separate from .value-card so its
+overflow:hidden (needed for the tilt glare + gradient border) doesn't force
+transform-style: preserve-3d to flatten */
+.card-flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(.2,.8,.2,1);
+}
+
 /*FLIP*/
-.value-card-inner.flipped .value-card {
+.value-card-inner.flipped .card-flipper {
   transform: rotateY(180deg);
 }
 
 
-/* .card-front,
+.card-front,
 .card-back {
   position: absolute;
   inset: 0;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
   padding: 1.5rem;
   box-sizing: border-box;
   border-radius: 20px;
-
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-
-  background: #fff;
-} */
+}
 
 .card-front { transform: rotateY(0deg);   z-index: 2; }
 .card-back  { transform: rotateY(180deg); z-index: 1; }

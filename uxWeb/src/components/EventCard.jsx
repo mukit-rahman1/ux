@@ -1,10 +1,10 @@
 import "../styles/events.css"
 import { useState } from "react"
+import EventImageGallery from "./EventImageGallery"
 
 export default function EventCard ({ type="upcoming", eventData }) {
 
     const [isExpanded, setIsExpanded] = useState(false)
-    const eventImage = eventData?.imageGallery?.[0] ?? "/event-placeholder.svg"
 
     // Automatically detect if event is in the past
     const isPastEvent = new Date(eventData?.date) < new Date()
@@ -62,14 +62,14 @@ export default function EventCard ({ type="upcoming", eventData }) {
                             Sign up
                         </a>
                     </div>
-                    <img src={eventImage.startsWith("/") ? eventImage : `../${eventImage}`} className="event-image" alt="Event" draggable={false} />
-                    
+                    <EventImageGallery images={eventData?.imageGallery} frameClassName="event-image-frame" />
+
             </div>
         )
     }
 
     return (
-        <div className={`event-card w-[433px] h-[600px]`}>
+        <div className={`event-card event-card--previous w-[433px] h-[600px]`}>
             <div className="event-prev-content">
                 <h3 className="event-title"> 
                     <span className="event-title-colour">{eventData?.title}</span> <br />
@@ -90,10 +90,10 @@ export default function EventCard ({ type="upcoming", eventData }) {
                         </button>
                     )}
                 </div>
-            
-                <img src={eventImage.startsWith("/") ? eventImage : `../${eventImage}`} className="event-image mt-4 mb-4" alt="Event" draggable={false} />
+
+                <EventImageGallery images={eventData?.imageGallery} frameClassName="event-image-frame event-image-frame--center-h mt-4 mb-4" />
             </div>
-            
+
         </div>
     )
 }

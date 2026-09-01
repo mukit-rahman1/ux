@@ -10,7 +10,7 @@
       "time": "6:00 PM - 8:00 PM",
       "location": "Engineering Building, Room 201",
       "signupLink": "https://forms.gle/example1",
-      "imageGallery": ["Group 10.svg"]
+      "imageGallery": ["/Group 10.svg"]
     },
     {
       "title": "Workshops",
@@ -52,8 +52,8 @@
       "location": "Goodes Hall, Rm 302",
       "signupLink": "https://forms.gle/example4",
       "imageGallery": [
-        "events/2026/interviews-1.png",
-        "events/2026/interviews-2.png"
+        "/events/2026/interviews-1.png",
+        "/events/2026/interviews-2.png"
       ]
     },
     {
@@ -66,10 +66,10 @@
       "location": "Goodwin Hall, CASLab",
       "signupLink": "",
       "imageGallery": [
-        "events/2026/resume-portfolio-1.jpg",
-        "events/2026/resume-portfolio-2.jpg",
-        "events/2026/resume-portfolio-3.jpg",
-        "events/2026/resume-portfolio-4.jpg"
+        "/events/2026/resume-portfolio-1.jpg",
+        "/events/2026/resume-portfolio-2.jpg",
+        "/events/2026/resume-portfolio-3.jpg",
+        "/events/2026/resume-portfolio-4.jpg"
       ]
     },
     {

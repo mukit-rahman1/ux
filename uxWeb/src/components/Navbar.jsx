@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/header.css";
 
 export default function Navbar() {
+    const { pathname } = useLocation();
+    const isActive = (path) =>
+        path === "/" ? pathname === "/" : pathname.startsWith(path);
+
     return (
         <div className="navbar-home">
             <div className="logo">
@@ -10,18 +14,16 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="nav-links">
-                <Link to="/">Home</Link>
-                <Link to="/team">Our Team</Link>
-                <Link to="/events">Events</Link>
-                <Link to="/hackathon">Designathon</Link>
-                <Link to="/sponsorship">Sponsorship</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/" className={isActive("/") ? "active" : ""}>Home</Link>
+                <Link to="/team" className={isActive("/team") ? "active" : ""}>Our Team</Link>
+                <Link to="/events" className={isActive("/events") ? "active" : ""}>Events</Link>
+                <Link to="/hackathon" className={isActive("/hackathon") ? "active" : ""}>Designathon</Link>
+                <Link to="/sponsorship" className={isActive("/sponsorship") ? "active" : ""}>Sponsorship</Link>
+                <Link to="/projects" className={isActive("/projects") ? "active" : ""}>Projects</Link>
             </div>
-            <Link to="mailto:queensuxclub@gmail.com">
-            <a className="contact-btn">
+            <a href="mailto:queensuxclub@gmail.com" className="contact-btn">
                 Contact
             </a>
-            </Link>
         </div>
     )
 }

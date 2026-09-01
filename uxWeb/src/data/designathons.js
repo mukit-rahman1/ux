@@ -18,6 +18,11 @@ export const designathons = [
         description: "For core memories made to be cherished, not just shared.",
         team: ["Vivian Song", "Harry Y", "Lillian W", "Chloe Zou"],
         url: "https://devpost.com/software/coeur",
+        imageGallery: [
+          "/designathon/2025/coeur-1.jpg",
+          "/designathon/2025/coeur-2.jpg",
+          "/designathon/2025/coeur-3.jpg",
+        ],
       },
       {
         place: "Second Place",
@@ -26,6 +31,7 @@ export const designathons = [
           "A mobile app that links music to photos to spark the recollection of memories and feelings.",
         team: ["Natalie Yu"],
         url: "https://devpost.com/software/frames-wv0j6l",
+        imageGallery: ["/designathon/2025/frames-1.jpg"],
       },
       {
         place: "Third Place",
@@ -34,6 +40,7 @@ export const designathons = [
           "A collaborative time-capsule app that makes real-life moments meaningful again.",
         team: ["Daniel Yu", "Joshua Macadangdang Ranin", "Jason C", "Jose Kerketta"],
         url: "https://devpost.com/software/unwrap-3iq7c4",
+        videoUrl: "https://www.youtube.com/watch?v=fIow9HGp82M",
       },
     ],
     projects: [

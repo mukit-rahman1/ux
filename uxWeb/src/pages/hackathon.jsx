@@ -1,12 +1,24 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Image, PlayCircle } from "lucide-react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import CustomCursor from "../components/customCursor";
+import EventImageGallery from "../components/EventImageGallery";
 import { designathons } from "../data/designathons";
+import "../styles/events.css";
 import "../styles/hackathon.css";
 
+const AVATAR_COLOURS = ["#A3280C", "#657F95", "#D53302", "#8FB1BE", "#FCC560", "#A0CBAD"];
+
+function getInitials(name) {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .map((part) => part[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+}
 
 export default function Hackathon() {
   const designathon = designathons[0];
@@ -30,11 +42,11 @@ export default function Hackathon() {
 
             <div className="hero-content-hk">
               <h1 className="hero-title-hk">
-                Designathon 2025
+                Designathon {designathon.year}
               </h1>
-              <p className="hero-subtitle-hk">November 15th - 22nd 2025 | Online</p>
+              <p className="hero-subtitle-hk">{designathon.dates} | {designathon.format}</p>
               <a href={designathon.devpostUrl} target="_blank" rel="noreferrer">
-                View the 2025 Designathon on Devpost
+                View the {designathon.year} Designathon on Devpost
               </a>
             </div>
 
@@ -86,10 +98,32 @@ export default function Hackathon() {
               <span>{designathon.projects.length + designathon.winners.length} projects</span>
             </div>
 
-            <h3 className="archive-heading">2025 winners</h3>
+            <h3 className="archive-heading">{designathon.year} winners</h3>
             <div className="archive-grid winners-grid">
-              {designathon.winners.map((winner) => (
-                <a href={winner.url} target="_blank" rel="noreferrer" className="archive-card winner-card-hk" key={winner.title}>
+              {designathon.winners.map((winner, index) => (
+                <a
+                  href={winner.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`archive-card winner-card-hk ${index === 1 ? "place-2" : ""}`}
+                  key={winner.title}
+                >
+                  {winner.imageGallery ? (
+                    <EventImageGallery
+                      images={winner.imageGallery}
+                      frameClassName="winner-media-frame"
+                    />
+                  ) : winner.videoUrl ? (
+                    <div className="winner-media-placeholder">
+                      <PlayCircle size={22} strokeWidth={1.5} />
+                      <span>Watch the demo video</span>
+                    </div>
+                  ) : (
+                    <div className="winner-media-placeholder">
+                      <Image size={22} strokeWidth={1.5} />
+                      <span>Project media coming soon</span>
+                    </div>
+                  )}
                   <small>{winner.place}</small>
                   <h4>{winner.title}</h4>
                   <p>{winner.description}</p>
@@ -101,8 +135,22 @@ export default function Hackathon() {
             <div className="archive-heading-row">
               <h3 className="archive-heading">More projects</h3>
               <a href={designathon.galleryUrl} target="_blank" rel="noreferrer">
-                See other projects at the Devpost <ArrowUpRight size={18} />
+                See other projects on Devpost <ArrowUpRight size={18} />
               </a>
+            </div>
+            <div className="archive-grid project-grid-hk">
+              {designathon.projects.map((project) => (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="archive-card project-card-hk"
+                  key={project.title}
+                >
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                </a>
+              ))}
             </div>
 
             <h3 className="archive-heading">Meet the mentors</h3>
@@ -111,10 +159,18 @@ export default function Hackathon() {
               participants with questions and real-world advice.
             </p>
             <div className="mentor-list-hk">
-              {designathon.mentors.map((mentor) => (
+              {designathon.mentors.map((mentor, index) => (
                 <article key={mentor.name}>
-                  <strong>{mentor.name}</strong>
-                  <span>{mentor.role}</span>
+                  <div
+                    className="mentor-avatar"
+                    style={{ background: AVATAR_COLOURS[index % AVATAR_COLOURS.length] }}
+                  >
+                    {getInitials(mentor.name)}
+                  </div>
+                  <div className="mentor-info">
+                    <strong>{mentor.name}</strong>
+                    <span>{mentor.role}</span>
+                  </div>
                 </article>
               ))}
             </div>
@@ -136,11 +192,10 @@ export default function Hackathon() {
               define our Designathon experience.
               </p>
             </div>
-            <Link to="mailto:quxspons@gmail.com">
-              <div className="btn">Become a Sponsor 
+            <a href="mailto:quxspons@gmail.com" className="btn">
+              Become a Sponsor
               <ArrowUpRight style={{ width: "2rem", height: "2rem", marginBottom: "0.2rem" }} />
-              </div>
-            </Link>
+            </a>
           </div>
         </div> 
       </section>

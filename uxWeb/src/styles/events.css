@@ -4,10 +4,10 @@
    1. PAGE & LAYOUT STYLES (Unchanged)
    ========================================= */
 :root {
-  --event-img-w: 374px;
-  --event-img-h: 311px;
-  --event-img-mobile-w: 175px;
-  --event-img-mobile-h: 175px;
+  --event-img-w: 364px;
+  --event-img-h: 301px;
+  --event-img-mobile-w: 165px;
+  --event-img-mobile-h: 165px;
 }
 
 .events {
@@ -41,9 +41,24 @@
   padding: 3rem 4rem;
 }
 
-.event-category-title { margin-top: 94px; margin-left: 139px; }
+.event-category-title { margin-top: 94px; text-align: center; }
 .event-upcoming-content { padding-right: 2rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; }
-.event-prev-content { width: 386px; height: 452px; display: flex; flex-direction: column; justify-content: space-between; }
+
+/* The previous-event card is much narrower than the upcoming card, so the shared 4rem side
+   padding leaves less room than the locked 374px-wide image frame needs — give it its own
+   padding so the frame (flex-shrink: 0) always fits without overflowing/mis-centering. */
+.event-card--previous { padding: 3rem 1.5rem; }
+.event-prev-content { width: 100%; height: 500px; display: flex; flex-direction: column; justify-content: space-between; }
+
+/* Clamp the title to a fixed 2 lines (category + subtitle) so a long subtitle can't add a 3rd
+   line and steal height the image needs — it ellipsizes instead of pushing the image down. */
+.event-prev-content .event-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .event-btn {
   padding: 5px 15px; border-color: #00022B; border-width: 1px; border-radius: 20px;
@@ -58,30 +73,67 @@
 .event-title-colour { background: linear-gradient(to right, #A3280C, #657F95); background-clip: border-box; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .event-description-container { display: flex; flex-direction: column; gap: 0.5rem; }
-.event-description-scrollable { max-height: 120px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #A3280C #f0f0f0; }
-.event-description-scrollable::-webkit-scrollbar { width: 6px; }
-.event-description-scrollable::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 3px; }
-.event-description-scrollable::-webkit-scrollbar-thumb { background: #A3280C; border-radius: 3px; }
-.event-description-scrollable::-webkit-scrollbar-thumb:hover { background: #657F95; }
+/* Fixed max-height so the title + description + image always fit the card's budget (image
+   never gets pushed into the rounded corners) — but only actually SCROLL (and show the
+   scrollbar) once "Read more" is clicked. Collapsed text is short enough to fit under this
+   cap already, so it just clips silently (no scrollbar) instead of scrolling. */
+.event-description-scrollable { max-height: 68px; }
+.event-description-scrollable.collapsed { overflow: hidden; }
+.event-description-scrollable.expanded {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #A3280C #f0f0f0;
+}
+.event-description-scrollable.expanded::-webkit-scrollbar { width: 6px; }
+.event-description-scrollable.expanded::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 3px; }
+.event-description-scrollable.expanded::-webkit-scrollbar-thumb { background: #A3280C; border-radius: 3px; }
+.event-description-scrollable.expanded::-webkit-scrollbar-thumb:hover { background: #657F95; }
 .event-description { font-family: "BR Firma", sans-serif; font-size: 14px; font-weight: 400; line-height: 120%; color: #000000; margin: 0; padding-right: 8px; }
 
 .read-more-btn { background: none; border: none; color: #A3280C; font-family: "BR Firma", sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; padding: 0; transition: color 0.2s ease; align-self: flex-start; }
 .read-more-btn:hover { color: #657F95; }
 
 .event-description-scrollable-mobile { max-height: 150px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #A3280C #f0f0f0; flex: 1; }
-.event-image { width: var(--event-img-w); height: var(--event-img-h); object-fit: cover; object-position: center; border-radius: 1rem; }
-.event-image-mobile { width: var(--event-img-mobile-w); height: var(--event-img-mobile-h); object-fit: cover; object-position: center; border-radius: 1rem; }
+
+/* Fixed-size frames so every event image (photo, svg, or placeholder) locks to the same box, regardless of its own intrinsic size.
+   object-fit: contain (not cover) keeps the full image visible with no side cropping, centered in the frame. */
+.event-image-frame { position: relative; width: var(--event-img-w); height: var(--event-img-h); overflow: hidden; flex-shrink: 0; background: #FFFCF5; display: flex; align-items: center; justify-content: center; }
+.event-image-frame img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; border-radius: 50px; }
+
+.event-image-frame-mobile { position: relative; width: var(--event-img-mobile-w); height: var(--event-img-mobile-h); overflow: hidden; flex-shrink: 0; background: #FFFCF5; display: flex; align-items: center; justify-content: center; }
+.event-image-frame-mobile img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; border-radius: 50px; }
+
+/* Cards that stack the frame in a column (previous-event card, mobile card) need it explicitly
+   centered on the cross axis — flex items with an explicit size don't stretch/center by default. */
+.event-image-frame--center-h { margin-left: auto; margin-right: auto; }
+
+.event-image-nav-btn {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 5;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85); border: none;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.event-image-nav-btn:hover { background: #fff; transform: translateY(-50%) scale(1.08); }
+.event-image-nav-btn svg { width: 14px; height: 14px; color: #00022B; }
+.event-image-nav-prev { left: 8px; }
+.event-image-nav-next { right: 8px; }
+
+.event-image-counter {
+  position: absolute; bottom: 8px; right: 8px; z-index: 5;
+  background: rgba(0, 2, 43, 0.6); color: #fff;
+  font-family: "BR Firma", sans-serif; font-size: 11px; font-weight: 600;
+  padding: 2px 8px; border-radius: 9999px; letter-spacing: 0.02em;
+}
 
 /* =========================================
    3. MEDIA QUERIES (Unchanged)
    ========================================= */
 @media (max-width: 1000px) {
-  .event-category-title { margin-left: 5%; }
   .event-card { padding: 2rem !important; }
   .container-events { margin: 0 auto; padding: 0; height: 90vh; }
-}
-@media (min-width: 2700px) {
-  .event-category-title { margin-left: 20%; }
 }
 
 /* =========================================

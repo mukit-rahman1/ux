@@ -161,6 +161,7 @@
 
 .archive-eyebrow {
   color: #A3280C;
+  font-family: "BR Firma", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -177,12 +178,16 @@
 .archive-stats span {
   border: 1px solid rgba(0, 2, 43, 0.15);
   border-radius: 999px;
+  font-family: "BR Firma", sans-serif;
+  font-weight: 500;
   padding: 0.75rem 1rem;
 }
 
 .archive-heading {
   color: #00022B;
+  font-family: "BR Firma", sans-serif;
   font-size: 1.8rem;
+  font-weight: 600;
   margin: 3.5rem 0 1.5rem;
 }
 
@@ -196,6 +201,8 @@
   align-items: center;
   color: #A3280C;
   display: flex;
+  font-family: "BR Firma", sans-serif;
+  font-weight: 600;
   gap: 0.35rem;
   margin-bottom: 1.5rem;
 }
@@ -216,6 +223,7 @@
   border-radius: 20px;
   color: #00022B;
   display: block;
+  font-family: "BR Firma", sans-serif;
   padding: 1.5rem;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -227,16 +235,75 @@
 
 .archive-card h4 {
   font-size: 1.35rem;
+  font-weight: 600;
   margin: 0.5rem 0;
 }
 
 .archive-card p {
+  font-weight: 400;
   line-height: 1.45;
+}
+
+.winner-card-hk {
+  position: relative;
+  z-index: 1;
+}
+
+.winner-card-hk::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #A3280C, #657F95);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.winner-card-hk.place-2::before {
+  background: linear-gradient(to right, #FCC560, #A0CBAD);
+}
+
+.winner-media-frame {
+  border-radius: 14px;
+  height: 140px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.winner-media-frame img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+}
+
+.winner-media-placeholder {
+  align-items: center;
+  background: rgba(0, 2, 43, 0.03);
+  border: 1.5px dashed rgba(0, 2, 43, 0.2);
+  border-radius: 14px;
+  color: rgba(0, 2, 43, 0.45);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  height: 120px;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .winner-card-hk small,
 .winner-card-hk span {
   color: #A3280C;
+  font-weight: 600;
 }
 
 .winner-card-hk span {
@@ -258,16 +325,43 @@
 }
 
 .mentor-list-hk article {
+  align-items: center;
   background: #fff;
   border-radius: 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-family: "BR Firma", sans-serif;
+  gap: 0.85rem;
   padding: 1rem;
+}
+
+.mentor-avatar {
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.mentor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-list-hk article strong {
+  color: #00022B;
+  font-weight: 600;
 }
 
 .mentor-list-hk span {
   color: #A3280C;
   font-size: 0.82rem;
+  font-weight: 500;
   margin-top: 0.25rem;
 }
 
